@@ -401,7 +401,7 @@ SV_CalcGunOffset(edict_t *ent)
 	int i;
 	float delta;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -494,7 +494,7 @@ SV_CalcBlend(edict_t *ent)
 	vec3_t vieworg;
 	int remaining;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -536,7 +536,7 @@ SV_CalcBlend(edict_t *ent)
 		if (remaining == 30) /* beginning to fade */
 		{
 			gi.sound(ent, CHAN_ITEM, gi.soundindex("items/damage2.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 		}
 
 		if ((remaining > 30) || (remaining & 4))
@@ -551,7 +551,7 @@ SV_CalcBlend(edict_t *ent)
 		if (remaining == 30) /* beginning to fade */
 		{
 			gi.sound(ent, CHAN_ITEM, gi.soundindex("items/quadfire2.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 		}
 
 		if ((remaining > 30) || (remaining & 4))
@@ -566,7 +566,7 @@ SV_CalcBlend(edict_t *ent)
 		if (remaining == 30) /* beginning to fade */
 		{
 			gi.sound(ent, CHAN_ITEM, gi.soundindex("items/protect2.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 		}
 
 		if ((remaining > 30) || (remaining & 4))
@@ -581,7 +581,7 @@ SV_CalcBlend(edict_t *ent)
 		if (remaining == 30) /* beginning to fade */
 		{
 			gi.sound(ent, CHAN_ITEM, gi.soundindex("items/airout.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 		}
 
 		if ((remaining > 30) || (remaining & 4))
@@ -596,7 +596,7 @@ SV_CalcBlend(edict_t *ent)
 		if (remaining == 30) /* beginning to fade */
 		{
 			gi.sound(ent, CHAN_ITEM, gi.soundindex("items/airout.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 		}
 
 		if ((remaining > 30) || (remaining & 4))
@@ -645,7 +645,7 @@ P_FallingDamage(edict_t *ent)
 	int damage;
 	vec3_t dir;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -802,7 +802,7 @@ P_WorldEffects(void)
 	{
 		PlayerNoise(current_player, current_player->s.origin, PNOISE_SELF);
 		gi.sound(current_player, CHAN_BODY, gi.soundindex("player/watr_out.wav"),
-			   	1, ATTN_NORM, 0);
+				1, ATTN_NORM, 0);
 		current_player->flags &= ~FL_INWATER;
 	}
 
@@ -810,7 +810,7 @@ P_WorldEffects(void)
 	if ((old_waterlevel != 3) && (waterlevel == 3))
 	{
 		gi.sound(current_player, CHAN_BODY, gi.soundindex("player/watr_un.wav"),
-			   	1, ATTN_NORM, 0);
+				1, ATTN_NORM, 0);
 	}
 
 	/* check for head just coming out of water */
@@ -846,13 +846,13 @@ P_WorldEffects(void)
 				{
 					gi.sound(current_player, CHAN_AUTO,
 							gi.soundindex("player/u_breath1.wav"),
-						   	1, ATTN_NORM, 0);
+							1, ATTN_NORM, 0);
 				}
 				else
 				{
 					gi.sound(current_player, CHAN_AUTO,
 							gi.soundindex("player/u_breath2.wav"),
-						   	1, ATTN_NORM, 0);
+							1, ATTN_NORM, 0);
 				}
 
 				current_client->breather_sound ^= 1;
@@ -963,7 +963,7 @@ G_SetClientEffects(edict_t *ent)
 	int pa_type;
 	int remaining;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1032,7 +1032,7 @@ G_SetClientEffects(edict_t *ent)
 void
 G_SetClientEvent(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1081,7 +1081,7 @@ G_SetClientSound(edict_t *ent)
 {
 	char *weap;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1098,7 +1098,7 @@ G_SetClientSound(edict_t *ent)
 	{
 		ent->client->pers.helpchanged++;
 		gi.sound(ent, CHAN_VOICE, gi.soundindex("misc/pc_up.wav"),
-			   	1, ATTN_STATIC, 0);
+				1, ATTN_STATIC, 0);
 	}
 
 	if (ent->client->pers.weapon)
@@ -1142,7 +1142,7 @@ G_SetClientFrame(edict_t *ent)
 	gclient_t *client;
 	qboolean duck, run;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1278,7 +1278,7 @@ ClientEndServerFrame(edict_t *ent)
 	float bobtime;
 	int i;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}

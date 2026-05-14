@@ -32,7 +32,7 @@ void parasite_refidget(edict_t *self);
 void
 parasite_launch(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -43,7 +43,7 @@ parasite_launch(edict_t *self)
 void
 parasite_reel_in(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -54,7 +54,7 @@ parasite_reel_in(edict_t *self)
 void
 parasite_sight(edict_t *self, edict_t *other /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -65,7 +65,7 @@ parasite_sight(edict_t *self, edict_t *other /* unused */)
 void
 parasite_tap(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -76,7 +76,7 @@ parasite_tap(edict_t *self)
 void
 parasite_scratch(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -87,7 +87,7 @@ parasite_scratch(edict_t *self)
 void
 parasite_search(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -104,9 +104,9 @@ mframe_t parasite_frames_start_fidget[] = {
 
 mmove_t parasite_move_start_fidget = {
 	FRAME_stand18,
-   	FRAME_stand21,
-   	parasite_frames_start_fidget,
-   	parasite_do_fidget
+	FRAME_stand21,
+	parasite_frames_start_fidget,
+	parasite_do_fidget
 };
 
 mframe_t parasite_frames_fidget[] = {
@@ -120,9 +120,9 @@ mframe_t parasite_frames_fidget[] = {
 
 mmove_t parasite_move_fidget = {
 	FRAME_stand22,
-   	FRAME_stand27,
-   	parasite_frames_fidget,
-   	parasite_refidget
+	FRAME_stand27,
+	parasite_frames_fidget,
+	parasite_refidget
 };
 
 mframe_t parasite_frames_end_fidget[] = {
@@ -138,15 +138,15 @@ mframe_t parasite_frames_end_fidget[] = {
 
 mmove_t parasite_move_end_fidget = {
 	FRAME_stand28,
-   	FRAME_stand35,
-   	parasite_frames_end_fidget,
-   	parasite_stand
+	FRAME_stand35,
+	parasite_frames_end_fidget,
+	parasite_stand
 };
 
 void
 parasite_end_fidget(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -157,7 +157,7 @@ parasite_end_fidget(edict_t *self)
 void
 parasite_do_fidget(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -168,7 +168,7 @@ parasite_do_fidget(edict_t *self)
 void
 parasite_refidget(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -186,7 +186,7 @@ parasite_refidget(edict_t *self)
 void
 parasite_idle(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -216,15 +216,15 @@ mframe_t parasite_frames_stand[] = {
 
 mmove_t parasite_move_stand = {
 	FRAME_stand01,
-   	FRAME_stand17,
-   	parasite_frames_stand,
-   	parasite_stand
+	FRAME_stand17,
+	parasite_frames_stand,
+	parasite_stand
 };
 
 void
 parasite_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -244,9 +244,9 @@ mframe_t parasite_frames_run[] = {
 
 mmove_t parasite_move_run = {
 	FRAME_run03,
-   	FRAME_run09,
-   	parasite_frames_run,
-   	NULL
+	FRAME_run09,
+	parasite_frames_run,
+	NULL
 };
 
 mframe_t parasite_frames_start_run[] = {
@@ -256,9 +256,9 @@ mframe_t parasite_frames_start_run[] = {
 
 mmove_t parasite_move_start_run = {
 	FRAME_run01,
-   	FRAME_run02,
-   	parasite_frames_start_run,
-   	parasite_run
+	FRAME_run02,
+	parasite_frames_start_run,
+	parasite_run
 };
 
 mframe_t parasite_frames_stop_run[] = {
@@ -272,15 +272,15 @@ mframe_t parasite_frames_stop_run[] = {
 
 mmove_t parasite_move_stop_run = {
 	FRAME_run10,
-   	FRAME_run15,
-   	parasite_frames_stop_run,
-   	NULL
+	FRAME_run15,
+	parasite_frames_stop_run,
+	NULL
 };
 
 void
 parasite_start_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -298,7 +298,7 @@ parasite_start_run(edict_t *self)
 void
 parasite_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -325,9 +325,9 @@ mframe_t parasite_frames_walk[] = {
 
 mmove_t parasite_move_walk = {
 	FRAME_run03,
-   	FRAME_run09,
-   	parasite_frames_walk,
-   	parasite_walk
+	FRAME_run09,
+	parasite_frames_walk,
+	parasite_walk
 };
 
 mframe_t parasite_frames_start_walk[] = {
@@ -337,9 +337,9 @@ mframe_t parasite_frames_start_walk[] = {
 
 mmove_t parasite_move_start_walk = {
 	FRAME_run01,
-   	FRAME_run02,
-   	parasite_frames_start_walk,
-   	NULL
+	FRAME_run02,
+	parasite_frames_start_walk,
+	NULL
 };
 
 mframe_t parasite_frames_stop_walk[] = {
@@ -353,15 +353,15 @@ mframe_t parasite_frames_stop_walk[] = {
 
 mmove_t parasite_move_stop_walk = {
 	FRAME_run10,
-   	FRAME_run15,
-   	parasite_frames_stop_walk,
-   	NULL
+	FRAME_run15,
+	parasite_frames_stop_walk,
+	NULL
 };
 
 void
 parasite_start_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -372,7 +372,7 @@ parasite_start_walk(edict_t *self)
 void
 parasite_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -396,16 +396,16 @@ mframe_t parasite_frames_pain1[] = {
 
 mmove_t parasite_move_pain1 = {
 	FRAME_pain101,
-   	FRAME_pain111,
-   	parasite_frames_pain1,
-   	parasite_start_run
+	FRAME_pain111,
+	parasite_frames_pain1,
+	parasite_start_run
 };
 
 void
 parasite_pain(edict_t *self, edict_t *other /* unused */,
-	   	float kick /* unused */, int damage /* unused */)
+		float kick /* unused */, int damage /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -475,7 +475,7 @@ parasite_drain_attack(edict_t *self)
 	trace_t tr;
 	int damage;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -560,9 +560,9 @@ mframe_t parasite_frames_drain[] = {
 
 mmove_t parasite_move_drain = {
 	FRAME_drain01,
-   	FRAME_drain18,
-   	parasite_frames_drain,
-   	parasite_start_run
+	FRAME_drain18,
+	parasite_frames_drain,
+	parasite_start_run
 };
 
 mframe_t parasite_frames_break[] = {
@@ -602,16 +602,16 @@ mframe_t parasite_frames_break[] = {
 
 mmove_t parasite_move_break = {
 	FRAME_break01,
-   	FRAME_break32,
-   	parasite_frames_break,
-   	parasite_start_run
+	FRAME_break32,
+	parasite_frames_break,
+	parasite_start_run
 };
 
 
 void
 parasite_attack(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -622,7 +622,7 @@ parasite_attack(edict_t *self)
 void
 parasite_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -647,9 +647,9 @@ mframe_t parasite_frames_death[] = {
 
 mmove_t parasite_move_death = {
 	FRAME_death101,
-   	FRAME_death107,
-   	parasite_frames_death,
-   	parasite_dead
+	FRAME_death107,
+	parasite_frames_death,
+	parasite_dead
 };
 
 void
@@ -659,7 +659,7 @@ parasite_die(edict_t *self, edict_t *inflictor /* unused */,
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -702,7 +702,7 @@ parasite_die(edict_t *self, edict_t *inflictor /* unused */,
 void
 SP_monster_parasite(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

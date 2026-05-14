@@ -39,7 +39,7 @@ P_ProjectSource(edict_t *ent, vec3_t distance,
 	float     *point  = ent->s.origin;
 	vec3_t     _distance;
 
-  	if (!client)
+	if (!client)
 	{
 		return;
 	}
@@ -333,7 +333,7 @@ ChangeWeapon(edict_t *ent)
 {
 	int i;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -463,7 +463,7 @@ NoAmmoWeaponChange(edict_t *ent)
 void
 Think_Weapon(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -824,7 +824,7 @@ Weapon_Generic(edict_t *ent, int FRAME_ACTIVATE_LAST, int FRAME_FIRE_LAST,
 				if (ent->client->quad_framenum > level.framenum)
 				{
 					gi.sound(ent, CHAN_ITEM, gi.soundindex("items/damage3.wav"),
-						   	1, ATTN_NORM, 0);
+							1, ATTN_NORM, 0);
 				}
 
 				fire(ent);
@@ -855,7 +855,7 @@ weapon_grenade_fire(edict_t *ent, qboolean held)
 	int speed;
 	float radius;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -913,7 +913,7 @@ weapon_grenade_fire(edict_t *ent, qboolean held)
 void
 Weapon_Grenade(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -949,7 +949,7 @@ Weapon_Grenade(edict_t *ent)
 				if (level.time >= ent->pain_debounce_time)
 				{
 					gi.sound(ent, CHAN_VOICE, gi.soundindex("weapons/noammo.wav"),
-						   	1, ATTN_NORM, 0);
+							1, ATTN_NORM, 0);
 					ent->pain_debounce_time = level.time + 1;
 				}
 
@@ -983,7 +983,7 @@ Weapon_Grenade(edict_t *ent)
 		if (ent->client->ps.gunframe == 5)
 		{
 			gi.sound(ent, CHAN_WEAPON, gi.soundindex("weapons/hgrena1b.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 		}
 
 		if (ent->client->ps.gunframe == 11)
@@ -1055,7 +1055,7 @@ weapon_grenadelauncher_fire(edict_t *ent)
 	int damage = 120;
 	float radius;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1118,7 +1118,7 @@ Weapon_RocketLauncher_Fire(edict_t *ent)
 	float damage_radius;
 	int radius_damage;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1164,7 +1164,7 @@ Weapon_RocketLauncher(edict_t *ent)
 	static int pause_frames[] = {25, 33, 42, 50, 0};
 	static int fire_frames[] = {5, 0};
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1189,7 +1189,7 @@ Blaster_Fire(edict_t *ent, vec3_t g_offset, int damage,
 	vec3_t start;
 	vec3_t offset;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1232,7 +1232,7 @@ Weapon_Blaster_Fire(edict_t *ent)
 {
 	int damage;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1256,7 +1256,7 @@ Weapon_Blaster(edict_t *ent)
 	static int pause_frames[] = {19, 32, 0};
 	static int fire_frames[] = {5, 0};
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1279,7 +1279,7 @@ Weapon_HyperBlaster_Fire(edict_t *ent)
 	int effect;
 	int damage;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1297,7 +1297,7 @@ Weapon_HyperBlaster_Fire(edict_t *ent)
 			if (level.time >= ent->pain_debounce_time)
 			{
 				gi.sound(ent, CHAN_VOICE, gi.soundindex("weapons/noammo.wav"),
-					   	1, ATTN_NORM, 0);
+						1, ATTN_NORM, 0);
 				ent->pain_debounce_time = level.time + 1;
 			}
 
@@ -1362,7 +1362,7 @@ Weapon_HyperBlaster_Fire(edict_t *ent)
 	if (ent->client->ps.gunframe == 12)
 	{
 		gi.sound(ent, CHAN_AUTO, gi.soundindex("weapons/hyprbd1a.wav"),
-			   	1, ATTN_NORM, 0);
+				1, ATTN_NORM, 0);
 		ent->client->weapon_sound = 0;
 	}
 }
@@ -1373,7 +1373,7 @@ Weapon_HyperBlaster(edict_t *ent)
 	static int pause_frames[] = {0};
 	static int fire_frames[] = {6, 7, 8, 9, 10, 11, 0};
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1401,7 +1401,7 @@ Machinegun_Fire(edict_t *ent)
 	int kick = 2;
 	vec3_t offset;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1429,7 +1429,7 @@ Machinegun_Fire(edict_t *ent)
 		if (level.time >= ent->pain_debounce_time)
 		{
 			gi.sound(ent, CHAN_VOICE, gi.soundindex("weapons/noammo.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 			ent->pain_debounce_time = level.time + 1;
 		}
 
@@ -1503,7 +1503,7 @@ Weapon_Machinegun(edict_t *ent)
 	static int pause_frames[] = {23, 45, 0};
 	static int fire_frames[] = {4, 5, 0};
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1530,7 +1530,7 @@ Chaingun_Fire(edict_t *ent)
 	int damage;
 	int kick = 2;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1547,7 +1547,7 @@ Chaingun_Fire(edict_t *ent)
 	if (ent->client->ps.gunframe == 5)
 	{
 		gi.sound(ent, CHAN_AUTO, gi.soundindex("weapons/chngnu1a.wav"),
-			   	1, ATTN_IDLE, 0);
+				1, ATTN_IDLE, 0);
 	}
 
 	if ((ent->client->ps.gunframe == 14) &&
@@ -1572,7 +1572,7 @@ Chaingun_Fire(edict_t *ent)
 	{
 		ent->client->weapon_sound = 0;
 		gi.sound(ent, CHAN_AUTO, gi.soundindex("weapons/chngnd1a.wav"),
-			   	1, ATTN_IDLE, 0);
+				1, ATTN_IDLE, 0);
 	}
 	else
 	{
@@ -1622,7 +1622,7 @@ Chaingun_Fire(edict_t *ent)
 		if (level.time >= ent->pain_debounce_time)
 		{
 			gi.sound(ent, CHAN_VOICE, gi.soundindex("weapons/noammo.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 			ent->pain_debounce_time = level.time + 1;
 		}
 
@@ -1676,7 +1676,7 @@ Weapon_Chaingun(edict_t *ent)
 	static int pause_frames[] = {38, 43, 51, 61, 0};
 	static int fire_frames[] = {5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 0};
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1701,7 +1701,7 @@ weapon_shotgun_fire(edict_t *ent)
 	int damage = 4;
 	int kick = 8;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1750,7 +1750,7 @@ Weapon_Shotgun(edict_t *ent)
 	static int pause_frames[] = {22, 28, 34, 0};
 	static int fire_frames[] = {8, 9, 0};
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1775,7 +1775,7 @@ weapon_supershotgun_fire(edict_t *ent)
 	int damage = 6;
 	int kick = 12;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1829,7 +1829,7 @@ Weapon_SuperShotgun(edict_t *ent)
 	Weapon_Generic(ent, 6, 17, 57, 61, pause_frames,
 			fire_frames, weapon_supershotgun_fire);
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1852,7 +1852,7 @@ weapon_railgun_fire(edict_t *ent)
 	int damage;
 	int kick;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1908,7 +1908,7 @@ Weapon_Railgun(edict_t *ent)
 	Weapon_Generic(ent, 3, 18, 56, 61, pause_frames,
 			fire_frames, weapon_railgun_fire);
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1930,7 +1930,7 @@ weapon_bfg_fire(edict_t *ent)
 	int damage;
 	float damage_radius = 1000;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -2000,7 +2000,7 @@ Weapon_BFG(edict_t *ent)
 	static int pause_frames[] = {39, 45, 50, 55, 0};
 	static int fire_frames[] = {9, 17, 0};
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -2028,7 +2028,7 @@ weapon_ionripper_fire(edict_t *ent)
 	vec3_t tempang;
 	int damage;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -2089,7 +2089,7 @@ Weapon_Ionripper(edict_t *ent)
 	static int pause_frames[] = {36, 0};
 	static int fire_frames[] = {5, 0};
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -2117,7 +2117,7 @@ weapon_phalanx_fire(edict_t *ent)
 	float damage_radius;
 	int radius_damage;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -2185,7 +2185,7 @@ Weapon_Phalanx(edict_t *ent)
 	static int pause_frames[] = {29, 42, 55, 0};
 	static int fire_frames[] = {7, 8, 0};
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -2213,7 +2213,7 @@ weapon_trap_fire(edict_t *ent, qboolean held)
 	int speed;
 	float radius;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -2231,7 +2231,7 @@ weapon_trap_fire(edict_t *ent, qboolean held)
 
 	timer = ent->client->grenade_time - level.time;
 	speed = GRENADE_MINSPEED + (GRENADE_TIMER - timer) *
-	   	((GRENADE_MAXSPEED - GRENADE_MINSPEED) / GRENADE_TIMER);
+		((GRENADE_MAXSPEED - GRENADE_MINSPEED) / GRENADE_TIMER);
 	fire_trap(ent, start, forward, damage, speed, timer, radius, held);
 
 	ent->client->pers.inventory[ent->client->ammo_index]--;
@@ -2241,7 +2241,7 @@ weapon_trap_fire(edict_t *ent, qboolean held)
 void
 Weapon_Trap(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -2277,7 +2277,7 @@ Weapon_Trap(edict_t *ent)
 				if (level.time >= ent->pain_debounce_time)
 				{
 					gi.sound(ent, CHAN_VOICE, gi.soundindex("weapons/noammo.wav"),
-						   	1, ATTN_NORM, 0);
+							1, ATTN_NORM, 0);
 					ent->pain_debounce_time = level.time + 1;
 				}
 
@@ -2311,7 +2311,7 @@ Weapon_Trap(edict_t *ent)
 		if (ent->client->ps.gunframe == 5)
 		{
 			gi.sound(ent, CHAN_WEAPON, gi.soundindex("weapons/trapcock.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 		}
 
 		if (ent->client->ps.gunframe == 11)

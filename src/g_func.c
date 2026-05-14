@@ -115,7 +115,7 @@ void Think_AccelMove(edict_t *ent);
 void
 Move_Calc(edict_t *ent, vec3_t dest, void (*func)(edict_t *))
 {
- 	if (!ent || !func)
+	if (!ent || !func)
 	{
 		return;
 	}
@@ -243,7 +243,7 @@ AngleMove_Begin(edict_t *ent)
 void
 AngleMove_Calc(edict_t *ent, void (*func)(edict_t *))
 {
- 	if (!ent || !func)
+	if (!ent || !func)
 	{
 		return;
 	}
@@ -1665,7 +1665,7 @@ door_killed(edict_t *self, edict_t *inflictor /* unused */, edict_t *attacker,
 void
 door_touch(edict_t *self, edict_t *other, cplane_t *plane /* unused */, csurface_t *surf /* unused */)
 {
- 	if (!self || !other)
+	if (!self || !other)
 	{
 		return;
 	}
@@ -2127,7 +2127,7 @@ train_blocked(edict_t *self, edict_t *other)
 		/* if it's still there, nuke it */
 		if (other->inuse)
 		{
-			/* Hack for entity without an origin near the model */			
+			/* Hack for entity without an origin near the model */
 			VectorMA (other->absmin, 0.5, other->size, other->s.origin);
 			BecomeExplosion1(other);
 		}
@@ -3040,7 +3040,7 @@ rotating_light_killed(edict_t *self, edict_t *inflictor /* unused */,
 
 void
 rotating_light_use(edict_t *self, edict_t *other /* unused */,
-	   	edict_t *activator /* unused */)
+		edict_t *activator /* unused */)
 {
 	if (!self)
 	{

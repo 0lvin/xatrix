@@ -5,7 +5,7 @@ void
 Use_Boss3(edict_t *ent, edict_t *other /* unused */,
 		edict_t *activator /* unused */)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -20,7 +20,7 @@ Use_Boss3(edict_t *ent, edict_t *other /* unused */,
 void
 Think_Boss3Stand(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -45,7 +45,7 @@ Think_Boss3Stand(edict_t *ent)
 void
 SP_monster_boss3_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

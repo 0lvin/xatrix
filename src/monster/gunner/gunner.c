@@ -26,7 +26,7 @@ void gunner_stand(edict_t *self);
 void
 gunner_idlesound(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -37,7 +37,7 @@ gunner_idlesound(edict_t *self)
 void
 gunner_sight(edict_t *self, edict_t *other)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -48,7 +48,7 @@ gunner_sight(edict_t *self, edict_t *other)
 void
 gunner_search(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -114,15 +114,15 @@ mframe_t gunner_frames_fidget[] = {
 
 mmove_t gunner_move_fidget = {
 	FRAME_stand31,
-   	FRAME_stand70,
-   	gunner_frames_fidget,
-   	gunner_stand
+	FRAME_stand70,
+	gunner_frames_fidget,
+	gunner_stand
 };
 
 void
 gunner_fidget(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -180,15 +180,15 @@ mframe_t gunner_frames_stand[] = {
 
 mmove_t gunner_move_stand = {
 	FRAME_stand01,
-   	FRAME_stand30,
-   	gunner_frames_stand,
-   	NULL
+	FRAME_stand30,
+	gunner_frames_stand,
+	NULL
 };
 
 void
 gunner_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -214,15 +214,15 @@ mframe_t gunner_frames_walk[] = {
 
 mmove_t gunner_move_walk = {
 	FRAME_walk07,
-   	FRAME_walk19,
-   	gunner_frames_walk,
-   	NULL
+	FRAME_walk19,
+	gunner_frames_walk,
+	NULL
 };
 
 void
 gunner_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -243,15 +243,15 @@ mframe_t gunner_frames_run[] = {
 
 mmove_t gunner_move_run = {
 	FRAME_run01,
-   	FRAME_run08,
-   	gunner_frames_run,
-   	NULL
+	FRAME_run08,
+	gunner_frames_run,
+	NULL
 };
 
 void
 gunner_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -277,15 +277,15 @@ mframe_t gunner_frames_runandshoot[] = {
 
 mmove_t gunner_move_runandshoot = {
 	FRAME_runs01,
-   	FRAME_runs06,
-   	gunner_frames_runandshoot,
-   	NULL
+	FRAME_runs06,
+	gunner_frames_runandshoot,
+	NULL
 };
 
 void
 gunner_runandshoot(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -303,9 +303,9 @@ mframe_t gunner_frames_pain3[] = {
 
 mmove_t gunner_move_pain3 = {
 	FRAME_pain301,
-   	FRAME_pain305,
-   	gunner_frames_pain3,
-   	gunner_run
+	FRAME_pain305,
+	gunner_frames_pain3,
+	gunner_run
 };
 
 mframe_t gunner_frames_pain2[] = {
@@ -321,9 +321,9 @@ mframe_t gunner_frames_pain2[] = {
 
 mmove_t gunner_move_pain2 = {
 	FRAME_pain201,
-   	FRAME_pain208,
-   	gunner_frames_pain2,
-   	gunner_run
+	FRAME_pain208,
+	gunner_frames_pain2,
+	gunner_run
 };
 
 mframe_t gunner_frames_pain1[] = {
@@ -349,16 +349,16 @@ mframe_t gunner_frames_pain1[] = {
 
 mmove_t gunner_move_pain1 = {
 	FRAME_pain101,
-   	FRAME_pain118,
-   	gunner_frames_pain1,
-   	gunner_run
+	FRAME_pain118,
+	gunner_frames_pain1,
+	gunner_run
 };
 
 void
 gunner_pain(edict_t *self, edict_t *other /* unused */,
-	   	float kick /* unused */, int damage)
+		float kick /* unused */, int damage)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -406,7 +406,7 @@ gunner_pain(edict_t *self, edict_t *other /* unused */,
 void
 gunner_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -435,9 +435,9 @@ mframe_t gunner_frames_death[] = {
 
 mmove_t gunner_move_death = {
 	FRAME_death01,
-   	FRAME_death11,
-   	gunner_frames_death,
-   	gunner_dead
+	FRAME_death11,
+	gunner_frames_death,
+	gunner_dead
 };
 
 void
@@ -447,7 +447,7 @@ gunner_die(edict_t *self, edict_t *inflictor /* unused */,
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -487,7 +487,7 @@ gunner_die(edict_t *self, edict_t *inflictor /* unused */,
 void
 gunner_duck_down(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -516,7 +516,7 @@ gunner_duck_down(edict_t *self)
 void
 gunner_duck_hold(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -534,7 +534,7 @@ gunner_duck_hold(edict_t *self)
 void
 gunner_duck_up(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -560,7 +560,7 @@ mmove_t gunner_move_duck = {
 	FRAME_duck01,
 	FRAME_duck08,
 	gunner_frames_duck,
-   	gunner_run
+	gunner_run
 };
 
 void
@@ -588,7 +588,7 @@ gunner_dodge(edict_t *self, edict_t *attacker, float eta /* unsued */)
 void
 gunner_opengun(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -605,7 +605,7 @@ GunnerFire(edict_t *self)
 	vec3_t aim;
 	int flash_number;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -635,7 +635,7 @@ GunnerGrenade(edict_t *self)
 	vec3_t aim;
 	int flash_number;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -676,9 +676,9 @@ mframe_t gunner_frames_attack_chain[] = {
 
 mmove_t gunner_move_attack_chain = {
 	FRAME_attak209,
-   	FRAME_attak215,
-   	gunner_frames_attack_chain,
-   	gunner_fire_chain
+	FRAME_attak215,
+	gunner_frames_attack_chain,
+	gunner_fire_chain
 };
 
 mframe_t gunner_frames_fire_chain[] = {
@@ -694,9 +694,9 @@ mframe_t gunner_frames_fire_chain[] = {
 
 mmove_t gunner_move_fire_chain = {
 	FRAME_attak216,
-   	FRAME_attak223,
-   	gunner_frames_fire_chain,
-   	gunner_refire_chain
+	FRAME_attak223,
+	gunner_frames_fire_chain,
+	gunner_refire_chain
 };
 
 mframe_t gunner_frames_endfire_chain[] = {
@@ -711,9 +711,9 @@ mframe_t gunner_frames_endfire_chain[] = {
 
 mmove_t gunner_move_endfire_chain = {
 	FRAME_attak224,
-   	FRAME_attak230,
-   	gunner_frames_endfire_chain,
-   	gunner_run
+	FRAME_attak230,
+	gunner_frames_endfire_chain,
+	gunner_run
 };
 
 mframe_t gunner_frames_attack_grenade[] = {
@@ -742,15 +742,15 @@ mframe_t gunner_frames_attack_grenade[] = {
 
 mmove_t gunner_move_attack_grenade = {
 	FRAME_attak101,
-   	FRAME_attak121,
-   	gunner_frames_attack_grenade,
-   	gunner_run
+	FRAME_attak121,
+	gunner_frames_attack_grenade,
+	gunner_run
 };
 
 void
 gunner_attack(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -775,7 +775,7 @@ gunner_attack(edict_t *self)
 void
 gunner_fire_chain(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -786,7 +786,7 @@ gunner_fire_chain(edict_t *self)
 void
 gunner_refire_chain(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -812,7 +812,7 @@ gunner_refire_chain(edict_t *self)
 void
 SP_monster_gunner(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

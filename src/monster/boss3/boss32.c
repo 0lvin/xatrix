@@ -38,7 +38,7 @@ makron_taunt(edict_t *self)
 {
 	float r;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -125,15 +125,15 @@ mframe_t makron_frames_stand[] = {
 
 mmove_t makron_move_stand = {
 	FRAME_stand201,
-   	FRAME_stand260,
-   	makron_frames_stand,
-   	NULL
+	FRAME_stand260,
+	makron_frames_stand,
+	NULL
 };
 
 void
 makron_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -156,15 +156,15 @@ mframe_t makron_frames_run[] = {
 
 mmove_t makron_move_run = {
 	FRAME_walk204,
-   	FRAME_walk213,
-   	makron_frames_run,
-   	NULL
+	FRAME_walk213,
+	makron_frames_run,
+	NULL
 };
 
 void
 makron_hit(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -175,7 +175,7 @@ makron_hit(edict_t *self)
 void
 makron_popup(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -186,7 +186,7 @@ makron_popup(edict_t *self)
 void
 makron_step_left(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -197,7 +197,7 @@ makron_step_left(edict_t *self)
 void
 makron_step_right(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -208,7 +208,7 @@ makron_step_right(edict_t *self)
 void
 makron_brainsplorch(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -219,7 +219,7 @@ makron_brainsplorch(edict_t *self)
 void
 makron_prerailgun(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -242,15 +242,15 @@ mframe_t makron_frames_walk[] = {
 
 mmove_t makron_move_walk = {
 	FRAME_walk204,
-   	FRAME_walk213,
-   	makron_frames_run,
-   	NULL
+	FRAME_walk213,
+	makron_frames_run,
+	NULL
 };
 
 void
 makron_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -261,7 +261,7 @@ makron_walk(edict_t *self)
 void
 makron_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -308,9 +308,9 @@ mframe_t makron_frames_pain6[] = {
 
 mmove_t makron_move_pain6 = {
 	FRAME_pain601,
-   	FRAME_pain627,
-   	makron_frames_pain6,
-   	makron_run
+	FRAME_pain627,
+	makron_frames_pain6,
+	makron_run
 };
 
 mframe_t makron_frames_pain5[] = {
@@ -322,9 +322,9 @@ mframe_t makron_frames_pain5[] = {
 
 mmove_t makron_move_pain5 = {
 	FRAME_pain501,
-   	FRAME_pain504,
-   	makron_frames_pain5,
-   	makron_run
+	FRAME_pain504,
+	makron_frames_pain5,
+	makron_run
 };
 
 mframe_t makron_frames_pain4[] = {
@@ -336,9 +336,9 @@ mframe_t makron_frames_pain4[] = {
 
 mmove_t makron_move_pain4 = {
 	FRAME_pain401,
-   	FRAME_pain404,
-   	makron_frames_pain4,
-   	makron_run
+	FRAME_pain404,
+	makron_frames_pain4,
+	makron_run
 };
 
 mframe_t makron_frames_death2[] = {
@@ -441,9 +441,9 @@ mframe_t makron_frames_death2[] = {
 
 mmove_t makron_move_death2 = {
 	FRAME_death201,
-   	FRAME_death295,
-   	makron_frames_death2,
-   	makron_dead
+	FRAME_death295,
+	makron_frames_death2,
+	makron_dead
 };
 
 mframe_t makron_frames_death3[] = {
@@ -471,9 +471,9 @@ mframe_t makron_frames_death3[] = {
 
 mmove_t makron_move_death3 = {
 	FRAME_death301,
-   	FRAME_death320,
-   	makron_frames_death3,
-   	NULL
+	FRAME_death320,
+	makron_frames_death3,
+	NULL
 };
 
 mframe_t makron_frames_sight[] = {
@@ -494,15 +494,15 @@ mframe_t makron_frames_sight[] = {
 
 mmove_t makron_move_sight = {
 	FRAME_active01,
-   	FRAME_active13,
-   	makron_frames_sight,
-   	makron_run
+	FRAME_active13,
+	makron_frames_sight,
+	makron_run
 };
 
 void
 makronBFG(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -537,9 +537,9 @@ mframe_t makron_frames_attack3[] = {
 
 mmove_t makron_move_attack3 = {
 	FRAME_attak301,
-   	FRAME_attak308,
-   	makron_frames_attack3,
-   	makron_run
+	FRAME_attak308,
+	makron_frames_attack3,
+	makron_run
 };
 
 mframe_t makron_frames_attack4[] = {
@@ -573,9 +573,9 @@ mframe_t makron_frames_attack4[] = {
 
 mmove_t makron_move_attack4 = {
 	FRAME_attak401,
-   	FRAME_attak426,
-   	makron_frames_attack4,
-   	makron_run
+	FRAME_attak426,
+	makron_frames_attack4,
+	makron_run
 };
 
 mframe_t makron_frames_attack5[] = {
@@ -599,15 +599,15 @@ mframe_t makron_frames_attack5[] = {
 
 mmove_t makron_move_attack5 = {
 	FRAME_attak501,
-   	FRAME_attak516,
-   	makron_frames_attack5,
-   	makron_run
+	FRAME_attak516,
+	makron_frames_attack5,
+	makron_run
 };
 
 void
 MakronSaveloc(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -623,7 +623,7 @@ MakronRailgun(edict_t *self)
 	vec3_t dir;
 	vec3_t forward, right;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -648,7 +648,7 @@ MakronHyperblaster(edict_t *self)
 	vec3_t forward, right;
 	int flash_number;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -693,7 +693,7 @@ void
 makron_pain(edict_t *self, edict_t *other /* unused */,
 		float kick /* unused */, int damage)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -766,7 +766,7 @@ makron_attack(edict_t *self)
 {
 	float r;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -792,7 +792,7 @@ makron_attack(edict_t *self)
 void
 makron_torso_think(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -902,7 +902,7 @@ makron_torso(edict_t *self)
 void
 makron_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -921,7 +921,7 @@ makron_die(edict_t *self, edict_t *inflictor /* unused */, edict_t *attacker /* 
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -980,7 +980,7 @@ Makron_CheckAttack(edict_t *self)
 	int enemy_range;
 	float enemy_yaw;
 
-  	if (!self)
+	if (!self)
 	{
 		return false;
 	}
@@ -1109,7 +1109,7 @@ MakronPrecache(void)
 void
 SP_monster_makron(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

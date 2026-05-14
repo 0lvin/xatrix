@@ -15,7 +15,7 @@
 void
 Use_Target_Tent(edict_t *ent, edict_t *other /* unused */ , edict_t *activator /* unused */)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -58,7 +58,7 @@ Use_Target_Speaker(edict_t *ent, edict_t *other /* unused */ , edict_t *activato
 {
 	int chan;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -99,7 +99,7 @@ SP_target_speaker(edict_t *ent)
 {
 	char buffer[MAX_QPATH];
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -154,7 +154,7 @@ SP_target_speaker(edict_t *ent)
 void
 Use_Target_Help(edict_t *ent, edict_t *other, edict_t *activator)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -179,7 +179,7 @@ Use_Target_Help(edict_t *ent, edict_t *other, edict_t *activator)
 void
 SP_target_help(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -211,7 +211,7 @@ SP_target_help(edict_t *ent)
 void
 use_target_secret(edict_t *ent, edict_t *other /* unused */, edict_t *activator /* unused */)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -227,7 +227,7 @@ use_target_secret(edict_t *ent, edict_t *other /* unused */, edict_t *activator 
 void
 SP_target_secret(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -283,7 +283,7 @@ use_target_goal(edict_t *ent, edict_t *other /* unused */, edict_t *activator /*
 void
 SP_target_goal(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -321,7 +321,7 @@ target_explosion_explode(edict_t *self)
 {
 	float save;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -358,7 +358,7 @@ use_target_explosion(edict_t *self, edict_t *other /* unused */, edict_t *activa
 void
 SP_target_explosion(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -426,7 +426,7 @@ use_target_changelevel(edict_t *self, edict_t *other, edict_t *activator)
 void
 SP_target_changelevel(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -493,7 +493,7 @@ use_target_splash(edict_t *self, edict_t *other /* unused */, edict_t *activator
 void
 SP_target_splash(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -531,7 +531,7 @@ use_target_spawner(edict_t *self, edict_t *other /* unused */, edict_t *activato
 {
 	edict_t *ent;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -554,7 +554,7 @@ use_target_spawner(edict_t *self, edict_t *other /* unused */, edict_t *activato
 void
 SP_target_spawner(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -581,7 +581,7 @@ SP_target_spawner(edict_t *self)
 void
 use_target_blaster(edict_t *self, edict_t *other /* unused */, edict_t *activator /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -595,7 +595,7 @@ use_target_blaster(edict_t *self, edict_t *other /* unused */, edict_t *activato
 void
 SP_target_blaster(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -642,7 +642,7 @@ trigger_crosslevel_trigger_use(edict_t *self, edict_t *other /* unused */,
 void
 SP_target_crosslevel_trigger(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -663,7 +663,7 @@ SP_target_crosslevel_trigger(edict_t *self)
 void
 target_crosslevel_target_think(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -679,7 +679,7 @@ target_crosslevel_target_think(edict_t *self)
 void
 SP_target_crosslevel_target(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -713,7 +713,7 @@ target_laser_think(edict_t *self)
 	vec3_t last_movedir;
 	int count;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -791,7 +791,7 @@ target_laser_think(edict_t *self)
 void
 target_laser_on(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -809,7 +809,7 @@ target_laser_on(edict_t *self)
 void
 target_laser_off(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -844,7 +844,7 @@ target_laser_start(edict_t *self)
 {
 	edict_t *ent;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -932,7 +932,7 @@ target_laser_start(edict_t *self)
 void
 SP_target_laser(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -948,7 +948,7 @@ SP_target_laser(edict_t *self)
 void
 target_mal_laser_on(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -966,7 +966,7 @@ target_mal_laser_on(edict_t *self)
 void
 target_mal_laser_off(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -999,7 +999,7 @@ target_mal_laser_use(edict_t *self, edict_t *other /* unused */, edict_t *activa
 void
 mal_laser_think(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1012,7 +1012,7 @@ mal_laser_think(edict_t *self)
 void
 SP_target_mal_laser(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1103,7 +1103,7 @@ target_lightramp_think(edict_t *self)
 {
 	char style[2];
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1131,7 +1131,7 @@ target_lightramp_think(edict_t *self)
 void
 target_lightramp_use(edict_t *self, edict_t *other /* unused */, edict_t *activator /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1181,7 +1181,7 @@ target_lightramp_use(edict_t *self, edict_t *other /* unused */, edict_t *activa
 void
 SP_target_lightramp(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1236,7 +1236,7 @@ target_earthquake_think(edict_t *self)
 	int i;
 	edict_t *e;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1299,7 +1299,7 @@ target_earthquake_use(edict_t *self, edict_t *other /* unused */, edict_t *activ
 void
 SP_target_earthquake(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

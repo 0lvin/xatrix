@@ -65,7 +65,7 @@ fixbot_FindDeadMonster(edict_t *self)
 	edict_t *ent = NULL;
 	edict_t *best = NULL;
 
-  	if (!self)
+	if (!self)
 	{
 		return NULL;
 	}
@@ -129,7 +129,7 @@ fixbot_search(edict_t *self)
 {
 	edict_t *ent;
 
-  	if (!self)
+	if (!self)
 	{
 		return 0;
 	}
@@ -195,7 +195,7 @@ landing_goal(edict_t *self)
 	vec3_t end;
 	edict_t *ent;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -227,7 +227,7 @@ takeoff_goal(edict_t *self)
 	vec3_t end;
 	edict_t *ent;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -255,7 +255,7 @@ takeoff_goal(edict_t *self)
 void
 change_to_roam(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -305,7 +305,7 @@ roam_goal(edict_t *self)
 	vec3_t vec;
 	vec3_t whichvec;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -357,7 +357,7 @@ use_scanner(edict_t *self)
 	edict_t *ent = NULL;
 	vec3_t vec;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -475,7 +475,7 @@ blastoff(edict_t *self, vec3_t start, vec3_t aimdir, int damage,
 	qboolean water = false;
 	int content_mask = MASK_SHOT | MASK_WATER;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -634,7 +634,7 @@ fly_vertical(edict_t *self)
 	vec3_t start;
 	vec3_t tempvec;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -672,7 +672,7 @@ fly_vertical2(edict_t *self)
 	vec3_t v;
 	int len;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -759,9 +759,9 @@ mframe_t fixbot_frames_landing[] = {
 
 mmove_t fixbot_move_landing = {
 	FRAME_landing_01,
-   	FRAME_landing_58,
-   	fixbot_frames_landing,
-   	NULL
+	FRAME_landing_58,
+	fixbot_frames_landing,
+	NULL
 };
 
 /*  generic ambient stand */
@@ -790,9 +790,9 @@ mframe_t fixbot_frames_stand[] = {
 
 mmove_t fixbot_move_stand = {
 	FRAME_ambient_01,
-   	FRAME_ambient_19,
-   	fixbot_frames_stand,
-   	NULL
+	FRAME_ambient_19,
+	fixbot_frames_stand,
+	NULL
 };
 
 mframe_t fixbot_frames_stand2[] = {
@@ -820,9 +820,9 @@ mframe_t fixbot_frames_stand2[] = {
 
 mmove_t fixbot_move_stand2 = {
 	FRAME_ambient_01,
-   	FRAME_ambient_19,
-   	fixbot_frames_stand2,
-   	NULL
+	FRAME_ambient_19,
+	fixbot_frames_stand2,
+	NULL
 };
 
 /*
@@ -865,9 +865,9 @@ mframe_t fixbot_frames_pickup[] = {
 
 mmove_t fixbot_move_pickup = {
 	FRAME_pickup_01,
-   	FRAME_pickup_27,
-   	fixbot_frames_pickup,
-   	NULL
+	FRAME_pickup_27,
+	fixbot_frames_pickup,
+	NULL
 };
 
 /*  generic frame to move bot */
@@ -877,9 +877,9 @@ mframe_t fixbot_frames_roamgoal[] = {
 
 mmove_t fixbot_move_roamgoal = {
 	FRAME_freeze_01,
-   	FRAME_freeze_01,
-   	fixbot_frames_roamgoal,
-   	NULL
+	FRAME_freeze_01,
+	fixbot_frames_roamgoal,
+	NULL
 };
 
 void
@@ -887,7 +887,7 @@ ai_facing(edict_t *self, float dist)
 {
 	vec3_t v;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -910,15 +910,15 @@ mframe_t fixbot_frames_turn[] = {
 
 mmove_t fixbot_move_turn = {
 	FRAME_freeze_01,
-   	FRAME_freeze_01,
-   	fixbot_frames_turn,
-   	NULL
+	FRAME_freeze_01,
+	fixbot_frames_turn,
+	NULL
 };
 
 void
 go_roam(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -949,9 +949,9 @@ mframe_t fixbot_frames_takeoff[] = {
 
 mmove_t fixbot_move_takeoff = {
 	FRAME_takeoff_01,
-   	FRAME_takeoff_16,
-   	fixbot_frames_takeoff,
-   	NULL
+	FRAME_takeoff_16,
+	fixbot_frames_takeoff,
+	NULL
 };
 
 /* findout what this is */
@@ -966,9 +966,9 @@ mframe_t fixbot_frames_paina[] = {
 
 mmove_t fixbot_move_paina = {
 	FRAME_paina_01,
-   	FRAME_paina_06,
-   	fixbot_frames_paina,
-   	fixbot_run
+	FRAME_paina_06,
+	fixbot_frames_paina,
+	fixbot_run
 };
 
 /* findout what this is */
@@ -985,9 +985,9 @@ mframe_t fixbot_frames_painb[] = {
 
 mmove_t fixbot_move_painb = {
 	FRAME_painb_01,
-   	FRAME_painb_08,
-   	fixbot_frames_painb,
-   	fixbot_run
+	FRAME_painb_08,
+	fixbot_frames_painb,
+	fixbot_run
 };
 
 /*
@@ -1001,9 +1001,9 @@ mframe_t fixbot_frames_pain3[] = {
 
 mmove_t fixbot_move_pain3 = {
 	FRAME_freeze_01,
-   	FRAME_freeze_01,
-   	fixbot_frames_pain3,
-   	fixbot_run
+	FRAME_freeze_01,
+	fixbot_frames_pain3,
+	fixbot_run
 };
 
 /*
@@ -1018,15 +1018,15 @@ mframe_t fixbot_frames_land[] = {
 
 mmove_t fixbot_move_land = {
 	FRAME_freeze_01,
-   	FRAME_freeze_01,
-   	fixbot_frames_land,
-   	NULL
+	FRAME_freeze_01,
+	fixbot_frames_land,
+	NULL
 };
 
 void
 ai_movetogoal(edict_t *self, float dist)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1040,9 +1040,9 @@ mframe_t fixbot_frames_forward[] = {
 
 mmove_t fixbot_move_forward = {
 	FRAME_freeze_01,
-   	FRAME_freeze_01,
-   	fixbot_frames_forward,
-   	NULL
+	FRAME_freeze_01,
+	fixbot_frames_forward,
+	NULL
 };
 
 mframe_t fixbot_frames_walk[] = {
@@ -1051,8 +1051,8 @@ mframe_t fixbot_frames_walk[] = {
 
 mmove_t fixbot_move_walk = {
 	FRAME_freeze_01,
-   	FRAME_freeze_01,
-   	fixbot_frames_walk,
+	FRAME_freeze_01,
+	fixbot_frames_walk,
 	NULL
 };
 
@@ -1062,9 +1062,9 @@ mframe_t fixbot_frames_run[] = {
 
 mmove_t fixbot_move_run = {
 	FRAME_freeze_01,
-   	FRAME_freeze_01,
-   	fixbot_frames_run,
-   	NULL
+	FRAME_freeze_01,
+	fixbot_frames_run,
+	NULL
 };
 
 mframe_t fixbot_frames_death1[] = {
@@ -1073,9 +1073,9 @@ mframe_t fixbot_frames_death1[] = {
 };
 mmove_t fixbot_move_death1 = {
 	FRAME_freeze_01,
-   	FRAME_freeze_01,
-   	fixbot_frames_death1,
-   	fixbot_dead
+	FRAME_freeze_01,
+	fixbot_frames_death1,
+	fixbot_dead
 };
 
 mframe_t fixbot_frames_backward[] = {
@@ -1084,9 +1084,9 @@ mframe_t fixbot_frames_backward[] = {
 
 mmove_t fixbot_move_backward = {
 	FRAME_freeze_01,
-   	FRAME_freeze_01,
-   	fixbot_frames_backward,
-   	NULL
+	FRAME_freeze_01,
+	fixbot_frames_backward,
+	NULL
 };
 
 mframe_t fixbot_frames_start_attack[] = {
@@ -1095,9 +1095,9 @@ mframe_t fixbot_frames_start_attack[] = {
 
 mmove_t fixbot_move_start_attack = {
 	FRAME_freeze_01,
-   	FRAME_freeze_01,
-   	fixbot_frames_start_attack,
-   	fixbot_attack
+	FRAME_freeze_01,
+	fixbot_frames_start_attack,
+	fixbot_attack
 };
 
 mframe_t fixbot_frames_attack1[] = {
@@ -1111,9 +1111,9 @@ mframe_t fixbot_frames_attack1[] = {
 
 mmove_t fixbot_move_attack1 = {
 	FRAME_shoot_01,
-   	FRAME_shoot_06,
-   	fixbot_frames_attack1,
-   	NULL
+	FRAME_shoot_06,
+	fixbot_frames_attack1,
+	NULL
 };
 
 int
@@ -1122,7 +1122,7 @@ check_telefrag(edict_t *self)
 	vec3_t end, up;
 	trace_t tr;
 
-  	if (!self)
+	if (!self)
 	{
 		return 0;
 	}
@@ -1155,7 +1155,7 @@ fixbot_fire_laser(edict_t *self)
 	vec3_t dir, angles, end;
 	edict_t *ent;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1169,7 +1169,7 @@ fixbot_fire_laser(edict_t *self)
 	}
 
 	gi.sound(self, CHAN_AUTO, gi.soundindex("misc/lasfly.wav"),
-		   	1, ATTN_STATIC, 0);
+			1, ATTN_STATIC, 0);
 
 	VectorCopy(self->s.origin, start);
 	VectorCopy(self->enemy->s.origin, end);
@@ -1229,9 +1229,9 @@ mframe_t fixbot_frames_laserattack[] = {
 
 mmove_t fixbot_move_laserattack = {
 	FRAME_shoot_01,
-   	FRAME_shoot_06,
-   	fixbot_frames_laserattack,
-   	NULL
+	FRAME_shoot_06,
+	fixbot_frames_laserattack,
+	NULL
 };
 
 /* need to get forward translation
@@ -1275,15 +1275,15 @@ mframe_t fixbot_frames_attack2[] = {
 
 mmove_t fixbot_move_attack2 = {
 	FRAME_charging_01,
-   	FRAME_charging_31,
-   	fixbot_frames_attack2,
-   	fixbot_run
+	FRAME_charging_31,
+	fixbot_frames_attack2,
+	fixbot_run
 };
 
 void
 weldstate(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1316,7 +1316,7 @@ ai_move2(edict_t *self, float dist)
 {
 	vec3_t v;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1346,9 +1346,9 @@ mframe_t fixbot_frames_weld_start[] = {
 
 mmove_t fixbot_move_weld_start = {
 	FRAME_weldstart_01,
-   	FRAME_weldstart_10,
-   	fixbot_frames_weld_start,
-   	NULL
+	FRAME_weldstart_10,
+	fixbot_frames_weld_start,
+	NULL
 };
 
 mframe_t fixbot_frames_weld[] = {
@@ -1363,9 +1363,9 @@ mframe_t fixbot_frames_weld[] = {
 
 mmove_t fixbot_move_weld = {
 	FRAME_weldmiddle_01,
-   	FRAME_weldmiddle_07,
-   	fixbot_frames_weld,
-   	NULL
+	FRAME_weldmiddle_07,
+	fixbot_frames_weld,
+	NULL
 };
 
 mframe_t fixbot_frames_weld_end[] = {
@@ -1380,9 +1380,9 @@ mframe_t fixbot_frames_weld_end[] = {
 
 mmove_t fixbot_move_weld_end = {
 	FRAME_weldend_01,
-   	FRAME_weldend_07,
-   	fixbot_frames_weld_end,
-   	NULL
+	FRAME_weldend_07,
+	fixbot_frames_weld_end,
+	NULL
 };
 
 void
@@ -1393,7 +1393,7 @@ fixbot_fire_welder(edict_t *self)
 	vec3_t vec;
 	float r;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1445,7 +1445,7 @@ fixbot_fire_blaster(edict_t *self)
 	vec3_t end;
 	vec3_t dir;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1470,7 +1470,7 @@ fixbot_fire_blaster(edict_t *self)
 void
 fixbot_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1481,7 +1481,7 @@ fixbot_stand(edict_t *self)
 void
 fixbot_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1502,7 +1502,7 @@ fixbot_walk(edict_t *self)
 	vec3_t vec;
 	int len;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1525,7 +1525,7 @@ fixbot_walk(edict_t *self)
 void
 fixbot_start_attack(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1539,7 +1539,7 @@ fixbot_attack(edict_t *self)
 	vec3_t vec;
 	int len;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1571,9 +1571,9 @@ fixbot_attack(edict_t *self)
 
 void
 fixbot_pain(edict_t *self, edict_t *other /* unused */,
-	   	float kick /* unused */, int damage /* unused */)
+		float kick /* unused */, int damage /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1603,7 +1603,7 @@ fixbot_pain(edict_t *self, edict_t *other /* unused */,
 void
 fixbot_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1620,7 +1620,7 @@ void
 fixbot_die(edict_t *self, edict_t *inflictor /* unused */, edict_t *attacker /* unused */,
 		int damage /* unused */, vec3_t point /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1635,7 +1635,7 @@ fixbot_die(edict_t *self, edict_t *inflictor /* unused */, edict_t *attacker /* 
 void
 SP_monster_fixbot(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

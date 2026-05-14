@@ -45,7 +45,7 @@ jorg_search(edict_t *self)
 {
 	float r;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -123,15 +123,15 @@ mframe_t jorg_frames_stand[] = {
 
 mmove_t jorg_move_stand = {
 	FRAME_stand01,
-   	FRAME_stand51,
-   	jorg_frames_stand,
-   	NULL
+	FRAME_stand51,
+	jorg_frames_stand,
+	NULL
 };
 
 void
 jorg_idle(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -142,7 +142,7 @@ jorg_idle(edict_t *self)
 void
 jorg_death_hit(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -153,7 +153,7 @@ jorg_death_hit(edict_t *self)
 void
 jorg_step_left(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -164,7 +164,7 @@ jorg_step_left(edict_t *self)
 void
 jorg_step_right(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -175,7 +175,7 @@ jorg_step_right(edict_t *self)
 void
 jorg_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -202,9 +202,9 @@ mframe_t jorg_frames_run[] = {
 
 mmove_t jorg_move_run = {
 	FRAME_walk06,
-   	FRAME_walk19,
-   	jorg_frames_run,
-   	NULL
+	FRAME_walk19,
+	jorg_frames_run,
+	NULL
 };
 
 /* walk */
@@ -218,9 +218,9 @@ mframe_t jorg_frames_start_walk[] = {
 
 mmove_t jorg_move_start_walk = {
 	FRAME_walk01,
-   	FRAME_walk05,
-   	jorg_frames_start_walk,
-   	NULL
+	FRAME_walk05,
+	jorg_frames_start_walk,
+	NULL
 };
 
 mframe_t jorg_frames_walk[] = {
@@ -242,9 +242,9 @@ mframe_t jorg_frames_walk[] = {
 
 mmove_t jorg_move_walk = {
 	FRAME_walk06,
-   	FRAME_walk19,
-   	jorg_frames_walk,
-   	NULL
+	FRAME_walk19,
+	jorg_frames_walk,
+	NULL
 };
 
 mframe_t jorg_frames_end_walk[] = {
@@ -258,15 +258,15 @@ mframe_t jorg_frames_end_walk[] = {
 
 mmove_t jorg_move_end_walk = {
 	FRAME_walk20,
-   	FRAME_walk25,
-   	jorg_frames_end_walk,
-   	NULL
+	FRAME_walk25,
+	jorg_frames_end_walk,
+	NULL
 };
 
 void
 jorg_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -277,7 +277,7 @@ jorg_walk(edict_t *self)
 void
 jorg_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -322,9 +322,9 @@ mframe_t jorg_frames_pain3[] = {
 
 mmove_t jorg_move_pain3 = {
 	FRAME_pain301,
-   	FRAME_pain325,
-   	jorg_frames_pain3,
-   	jorg_run
+	FRAME_pain325,
+	jorg_frames_pain3,
+	jorg_run
 };
 
 mframe_t jorg_frames_pain2[] = {
@@ -335,9 +335,9 @@ mframe_t jorg_frames_pain2[] = {
 
 mmove_t jorg_move_pain2 = {
 	FRAME_pain201,
-   	FRAME_pain203,
-   	jorg_frames_pain2,
-   	jorg_run
+	FRAME_pain203,
+	jorg_frames_pain2,
+	jorg_run
 };
 
 mframe_t jorg_frames_pain1[] = {
@@ -348,9 +348,9 @@ mframe_t jorg_frames_pain1[] = {
 
 mmove_t jorg_move_pain1 = {
 	FRAME_pain101,
-   	FRAME_pain103,
-   	jorg_frames_pain1,
-   	jorg_run
+	FRAME_pain103,
+	jorg_frames_pain1,
+	jorg_run
 };
 
 mframe_t jorg_frames_death1[] = {
@@ -409,8 +409,8 @@ mframe_t jorg_frames_death1[] = {
 mmove_t jorg_move_death = {
 	FRAME_death01,
 	FRAME_death50,
-   	jorg_frames_death1,
-   	jorg_dead
+	jorg_frames_death1,
+	jorg_dead
 };
 
 mframe_t jorg_frames_attack2[] = {
@@ -431,9 +431,9 @@ mframe_t jorg_frames_attack2[] = {
 
 mmove_t jorg_move_attack2 = {
 	FRAME_attak201,
-   	FRAME_attak213,
-   	jorg_frames_attack2,
-   	jorg_run
+	FRAME_attak213,
+	jorg_frames_attack2,
+	jorg_run
 };
 
 mframe_t jorg_frames_start_attack1[] = {
@@ -449,9 +449,9 @@ mframe_t jorg_frames_start_attack1[] = {
 
 mmove_t jorg_move_start_attack1 = {
 	FRAME_attak101,
-   	FRAME_attak108,
-   	jorg_frames_start_attack1,
-   	jorg_attack1
+	FRAME_attak108,
+	jorg_frames_start_attack1,
+	jorg_attack1
 };
 
 mframe_t jorg_frames_attack1[] = {
@@ -465,9 +465,9 @@ mframe_t jorg_frames_attack1[] = {
 
 mmove_t jorg_move_attack1 = {
 	FRAME_attak109,
-   	FRAME_attak114,
-   	jorg_frames_attack1,
-   	jorg_reattack1
+	FRAME_attak114,
+	jorg_frames_attack1,
+	jorg_reattack1
 };
 
 mframe_t jorg_frames_end_attack1[] = {
@@ -479,15 +479,15 @@ mframe_t jorg_frames_end_attack1[] = {
 
 mmove_t jorg_move_end_attack1 = {
 	FRAME_attak115,
-   	FRAME_attak118,
-   	jorg_frames_end_attack1,
-   	jorg_run
+	FRAME_attak118,
+	jorg_frames_end_attack1,
+	jorg_run
 };
 
 void
 jorg_reattack1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -514,7 +514,7 @@ jorg_reattack1(edict_t *self)
 void
 jorg_attack1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -524,9 +524,9 @@ jorg_attack1(edict_t *self)
 
 void
 jorg_pain(edict_t *self, edict_t *other /* unused */,
-	   	float kick /* unused */, int damage)
+		float kick /* unused */, int damage)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -614,7 +614,7 @@ jorgBFG(edict_t *self)
 	vec3_t dir;
 	vec3_t vec;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -637,7 +637,7 @@ jorg_firebullet_right(edict_t *self)
 	vec3_t forward, right, target;
 	vec3_t start;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -661,7 +661,7 @@ jorg_firebullet_left(edict_t *self)
 	vec3_t forward, right, target;
 	vec3_t start;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -682,7 +682,7 @@ jorg_firebullet_left(edict_t *self)
 void
 jorg_firebullet(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -694,7 +694,7 @@ jorg_firebullet(edict_t *self)
 void
 jorg_attack(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -722,7 +722,7 @@ void
 jorg_die(edict_t *self, edict_t *inflictor /* unused */, edict_t *attacker /* unused */,
 		int damage /* unused */, vec3_t point /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -745,7 +745,7 @@ Jorg_CheckAttack(edict_t *self)
 	int enemy_range;
 	float enemy_yaw;
 
-  	if (!self)
+	if (!self)
 	{
 		return false;
 	}
@@ -851,7 +851,7 @@ Jorg_CheckAttack(edict_t *self)
 void
 SP_monster_jorg(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

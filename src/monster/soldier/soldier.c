@@ -32,7 +32,7 @@ extern void brain_dabeam(edict_t *self);
 void
 soldier_idle(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -46,7 +46,7 @@ soldier_idle(edict_t *self)
 void
 soldier_cock(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -98,9 +98,9 @@ mframe_t soldier_frames_stand1[] = {
 
 mmove_t soldier_move_stand1 = {
 	FRAME_stand101,
-   	FRAME_stand130,
-   	soldier_frames_stand1,
-   	soldier_stand
+	FRAME_stand130,
+	soldier_frames_stand1,
+	soldier_stand
 };
 
 mframe_t soldier_frames_stand3[] = {
@@ -150,15 +150,15 @@ mframe_t soldier_frames_stand3[] = {
 
 mmove_t soldier_move_stand3 = {
 	FRAME_stand301,
-   	FRAME_stand339,
-   	soldier_frames_stand3,
-   	soldier_stand
+	FRAME_stand339,
+	soldier_frames_stand3,
+	soldier_stand
 };
 
 void
 soldier_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -177,7 +177,7 @@ soldier_stand(edict_t *self)
 void
 soldier_walk1_random(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -226,9 +226,9 @@ mframe_t soldier_frames_walk1[] = {
 
 mmove_t soldier_move_walk1 = {
 	FRAME_walk101,
-   	FRAME_walk133,
-   	soldier_frames_walk1,
-   	NULL
+	FRAME_walk133,
+	soldier_frames_walk1,
+	NULL
 };
 
 mframe_t soldier_frames_walk2[] = {
@@ -246,15 +246,15 @@ mframe_t soldier_frames_walk2[] = {
 
 mmove_t soldier_move_walk2 = {
 	FRAME_walk209,
-   	FRAME_walk218,
-   	soldier_frames_walk2,
-   	NULL
+	FRAME_walk218,
+	soldier_frames_walk2,
+	NULL
 };
 
 void
 soldier_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -276,9 +276,9 @@ mframe_t soldier_frames_start_run[] = {
 
 mmove_t soldier_move_start_run = {
 	FRAME_run01,
-   	FRAME_run02,
-   	soldier_frames_start_run,
-   	soldier_run
+	FRAME_run02,
+	soldier_frames_start_run,
+	soldier_run
 };
 
 mframe_t soldier_frames_run[] = {
@@ -292,15 +292,15 @@ mframe_t soldier_frames_run[] = {
 
 mmove_t soldier_move_run = {
 	FRAME_run03,
-   	FRAME_run08,
-   	soldier_frames_run,
-   	NULL
+	FRAME_run08,
+	soldier_frames_run,
+	NULL
 };
 
 void
 soldier_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -333,9 +333,9 @@ mframe_t soldier_frames_pain1[] = {
 
 mmove_t soldier_move_pain1 = {
 	FRAME_pain101,
-   	FRAME_pain105,
-   	soldier_frames_pain1,
-   	soldier_run
+	FRAME_pain105,
+	soldier_frames_pain1,
+	soldier_run
 };
 
 mframe_t soldier_frames_pain2[] = {
@@ -350,9 +350,9 @@ mframe_t soldier_frames_pain2[] = {
 
 mmove_t soldier_move_pain2 = {
 	FRAME_pain201,
-   	FRAME_pain207,
-   	soldier_frames_pain2,
-   	soldier_run
+	FRAME_pain207,
+	soldier_frames_pain2,
+	soldier_run
 };
 
 mframe_t soldier_frames_pain3[] = {
@@ -378,9 +378,9 @@ mframe_t soldier_frames_pain3[] = {
 
 mmove_t soldier_move_pain3 = {
 	FRAME_pain301,
-   	FRAME_pain318,
-   	soldier_frames_pain3,
-   	soldier_run
+	FRAME_pain318,
+	soldier_frames_pain3,
+	soldier_run
 };
 
 mframe_t soldier_frames_pain4[] = {
@@ -405,9 +405,9 @@ mframe_t soldier_frames_pain4[] = {
 
 mmove_t soldier_move_pain4 = {
 	FRAME_pain401,
-   	FRAME_pain417,
-   	soldier_frames_pain4,
-   	soldier_run
+	FRAME_pain417,
+	soldier_frames_pain4,
+	soldier_run
 };
 
 void
@@ -417,7 +417,7 @@ soldier_pain(edict_t *self, edict_t *other /* unused */,
 	float r;
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -486,35 +486,35 @@ soldier_pain(edict_t *self, edict_t *other /* unused */,
 
 static int blaster_flash[] = {
 	MZ2_SOLDIER_BLASTER_1,
-   	MZ2_SOLDIER_BLASTER_2,
-   	MZ2_SOLDIER_BLASTER_3,
+	MZ2_SOLDIER_BLASTER_2,
+	MZ2_SOLDIER_BLASTER_3,
 	MZ2_SOLDIER_BLASTER_4,
-   	MZ2_SOLDIER_BLASTER_5,
-   	MZ2_SOLDIER_BLASTER_6,
+	MZ2_SOLDIER_BLASTER_5,
+	MZ2_SOLDIER_BLASTER_6,
 	MZ2_SOLDIER_BLASTER_7,
-   	MZ2_SOLDIER_BLASTER_8
+	MZ2_SOLDIER_BLASTER_8
 };
 
 static int shotgun_flash[] = {
 	MZ2_SOLDIER_SHOTGUN_1,
-   	MZ2_SOLDIER_SHOTGUN_2,
-   	MZ2_SOLDIER_SHOTGUN_3,
+	MZ2_SOLDIER_SHOTGUN_2,
+	MZ2_SOLDIER_SHOTGUN_3,
 	MZ2_SOLDIER_SHOTGUN_4,
-   	MZ2_SOLDIER_SHOTGUN_5,
-   	MZ2_SOLDIER_SHOTGUN_6,
+	MZ2_SOLDIER_SHOTGUN_5,
+	MZ2_SOLDIER_SHOTGUN_6,
 	MZ2_SOLDIER_SHOTGUN_7,
-   	MZ2_SOLDIER_SHOTGUN_8
+	MZ2_SOLDIER_SHOTGUN_8
 };
 
 static int machinegun_flash[] = {
 	MZ2_SOLDIER_MACHINEGUN_1,
-   	MZ2_SOLDIER_MACHINEGUN_2,
-   	MZ2_SOLDIER_MACHINEGUN_3,
+	MZ2_SOLDIER_MACHINEGUN_2,
+	MZ2_SOLDIER_MACHINEGUN_3,
 	MZ2_SOLDIER_MACHINEGUN_4,
-   	MZ2_SOLDIER_MACHINEGUN_5,
-   	MZ2_SOLDIER_MACHINEGUN_6,
+	MZ2_SOLDIER_MACHINEGUN_5,
+	MZ2_SOLDIER_MACHINEGUN_6,
 	MZ2_SOLDIER_MACHINEGUN_7,
-   	MZ2_SOLDIER_MACHINEGUN_8
+	MZ2_SOLDIER_MACHINEGUN_8
 };
 
 void
@@ -528,7 +528,7 @@ soldier_fire(edict_t *self, int flash_number)
 	float r, u;
 	int flash_index;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -605,7 +605,7 @@ soldier_fire(edict_t *self, int flash_number)
 void
 soldier_fire1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -616,7 +616,7 @@ soldier_fire1(edict_t *self)
 void
 soldier_attack1_refire1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -644,7 +644,7 @@ soldier_attack1_refire1(edict_t *self)
 void
 soldier_attack1_refire2(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -682,15 +682,15 @@ mframe_t soldier_frames_attack1[] = {
 
 mmove_t soldier_move_attack1 = {
 	FRAME_attak101,
-   	FRAME_attak112,
-   	soldier_frames_attack1,
-   	soldier_run
+	FRAME_attak112,
+	soldier_frames_attack1,
+	soldier_run
 };
 
 void
 soldier_fire2(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -701,7 +701,7 @@ soldier_fire2(edict_t *self)
 void
 soldier_attack2_refire1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -729,7 +729,7 @@ soldier_attack2_refire1(edict_t *self)
 void
 soldier_attack2_refire2(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -773,15 +773,15 @@ mframe_t soldier_frames_attack2[] = {
 
 mmove_t soldier_move_attack2 = {
 	FRAME_attak201,
-   	FRAME_attak218,
-   	soldier_frames_attack2,
-   	soldier_run
+	FRAME_attak218,
+	soldier_frames_attack2,
+	soldier_run
 };
 
 void
 soldier_duck_down(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -801,7 +801,7 @@ soldier_duck_down(edict_t *self)
 void
 soldier_duck_up(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -815,7 +815,7 @@ soldier_duck_up(edict_t *self)
 void
 soldier_fire3(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -827,7 +827,7 @@ soldier_fire3(edict_t *self)
 void
 soldier_attack3_refire(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -852,15 +852,15 @@ mframe_t soldier_frames_attack3[] = {
 
 mmove_t soldier_move_attack3 = {
 	FRAME_attak301,
-   	FRAME_attak309,
-   	soldier_frames_attack3,
-   	soldier_run
+	FRAME_attak309,
+	soldier_frames_attack3,
+	soldier_run
 };
 
 void
 soldier_fire4(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -879,15 +879,15 @@ mframe_t soldier_frames_attack4[] = {
 
 mmove_t soldier_move_attack4 = {
 	FRAME_attak401,
-   	FRAME_attak406,
-   	soldier_frames_attack4,
-   	soldier_run
+	FRAME_attak406,
+	soldier_frames_attack4,
+	soldier_run
 };
 
 void
 soldier_fire8(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -898,7 +898,7 @@ soldier_fire8(edict_t *self)
 void
 soldier_attack6_refire(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -938,15 +938,15 @@ mframe_t soldier_frames_attack6[] = {
 
 mmove_t soldier_move_attack6 = {
 	FRAME_runs01,
-   	FRAME_runs14,
-   	soldier_frames_attack6,
-   	soldier_run
+	FRAME_runs14,
+	soldier_frames_attack6,
+	soldier_run
 };
 
 void
 soldier_attack(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -971,7 +971,7 @@ soldier_attack(edict_t *self)
 void
 soldier_sight(edict_t *self, edict_t *other /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -997,7 +997,7 @@ soldier_sight(edict_t *self, edict_t *other /* unused */)
 void
 soldier_duck_hold(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1022,9 +1022,9 @@ mframe_t soldier_frames_duck[] = {
 
 mmove_t soldier_move_duck = {
 	FRAME_duck01,
-   	FRAME_duck05,
-   	soldier_frames_duck,
-   	soldier_run
+	FRAME_duck05,
+	soldier_frames_duck,
+	soldier_run
 };
 
 void
@@ -1032,7 +1032,7 @@ soldier_dodge(edict_t *self, edict_t *attacker, float eta)
 {
 	float r;
 
-  	if (!self || !attacker)
+	if (!self || !attacker)
 	{
 		return;
 	}
@@ -1093,7 +1093,7 @@ soldier_dodge(edict_t *self, edict_t *attacker, float eta)
 void
 soldier_fire6(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1104,7 +1104,7 @@ soldier_fire6(edict_t *self)
 void
 soldier_fire7(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1115,7 +1115,7 @@ soldier_fire7(edict_t *self)
 void
 soldier_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1172,9 +1172,9 @@ mframe_t soldier_frames_death1[] = {
 
 mmove_t soldier_move_death1 = {
 	FRAME_death101,
-   	FRAME_death136,
-   	soldier_frames_death1,
-   	soldier_dead
+	FRAME_death136,
+	soldier_frames_death1,
+	soldier_dead
 };
 
 mframe_t soldier_frames_death2[] = {
@@ -1220,9 +1220,9 @@ mframe_t soldier_frames_death2[] = {
 
 mmove_t soldier_move_death2 = {
 	FRAME_death201,
-   	FRAME_death235,
-   	soldier_frames_death2,
-   	soldier_dead
+	FRAME_death235,
+	soldier_frames_death2,
+	soldier_dead
 };
 
 mframe_t soldier_frames_death3[] = {
@@ -1279,9 +1279,9 @@ mframe_t soldier_frames_death3[] = {
 
 mmove_t soldier_move_death3 = {
 	FRAME_death301,
-   	FRAME_death345,
-   	soldier_frames_death3,
-   	soldier_dead
+	FRAME_death345,
+	soldier_frames_death3,
+	soldier_dead
 };
 
 mframe_t soldier_frames_death4[] = {
@@ -1347,9 +1347,9 @@ mframe_t soldier_frames_death4[] = {
 
 mmove_t soldier_move_death4 = {
 	FRAME_death401,
-   	FRAME_death453,
-   	soldier_frames_death4,
-   	soldier_dead
+	FRAME_death453,
+	soldier_frames_death4,
+	soldier_dead
 };
 
 mframe_t soldier_frames_death5[] = {
@@ -1383,9 +1383,9 @@ mframe_t soldier_frames_death5[] = {
 
 mmove_t soldier_move_death5 = {
 	FRAME_death501,
-   	FRAME_death524,
-   	soldier_frames_death5,
-   	soldier_dead
+	FRAME_death524,
+	soldier_frames_death5,
+	soldier_dead
 };
 
 mframe_t soldier_frames_death6[] = {
@@ -1403,9 +1403,9 @@ mframe_t soldier_frames_death6[] = {
 
 mmove_t soldier_move_death6 = {
 	FRAME_death601,
-   	FRAME_death610,
-   	soldier_frames_death6,
-   	soldier_dead
+	FRAME_death610,
+	soldier_frames_death6,
+	soldier_dead
 };
 
 void
@@ -1415,7 +1415,7 @@ soldier_die(edict_t *self, edict_t *inflictor /* unused */,
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1493,7 +1493,7 @@ soldier_die(edict_t *self, edict_t *inflictor /* unused */,
 void
 SP_monster_soldier_x(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1536,7 +1536,7 @@ SP_monster_soldier_x(edict_t *self)
 void
 SP_monster_soldier_light(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1567,7 +1567,7 @@ SP_monster_soldier_light(edict_t *self)
 void
 SP_monster_soldier(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1596,7 +1596,7 @@ SP_monster_soldier(edict_t *self)
 void
 SP_monster_soldier_ss(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1622,7 +1622,7 @@ SP_monster_soldier_ss(edict_t *self)
 void
 soldierh_idle(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1636,7 +1636,7 @@ soldierh_idle(edict_t *self)
 void
 soldierh_cock(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1688,9 +1688,9 @@ mframe_t soldierh_frames_stand1[] = {
 
 mmove_t soldierh_move_stand1 = {
 	FRAME_stand101,
-   	FRAME_stand130,
-   	soldierh_frames_stand1,
-   	soldierh_stand
+	FRAME_stand130,
+	soldierh_frames_stand1,
+	soldierh_stand
 };
 
 mframe_t soldierh_frames_stand3[] = {
@@ -1740,15 +1740,15 @@ mframe_t soldierh_frames_stand3[] = {
 
 mmove_t soldierh_move_stand3 = {
 	FRAME_stand301,
-   	FRAME_stand339,
-   	soldierh_frames_stand3,
-   	soldierh_stand
+	FRAME_stand339,
+	soldierh_frames_stand3,
+	soldierh_stand
 };
 
 void
 soldierh_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1766,7 +1766,7 @@ soldierh_stand(edict_t *self)
 void
 soldierh_walk1_random(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1815,9 +1815,9 @@ mframe_t soldierh_frames_walk1[] = {
 
 mmove_t soldierh_move_walk1 = {
 	FRAME_walk101,
-   	FRAME_walk133,
-   	soldierh_frames_walk1,
-   	NULL
+	FRAME_walk133,
+	soldierh_frames_walk1,
+	NULL
 };
 
 mframe_t soldierh_frames_walk2[] = {
@@ -1835,15 +1835,15 @@ mframe_t soldierh_frames_walk2[] = {
 
 mmove_t soldierh_move_walk2 = {
 	FRAME_walk209,
-   	FRAME_walk218,
-   	soldierh_frames_walk2,
-   	NULL
+	FRAME_walk218,
+	soldierh_frames_walk2,
+	NULL
 };
 
 void
 soldierh_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1865,9 +1865,9 @@ mframe_t soldierh_frames_start_run[] = {
 
 mmove_t soldierh_move_start_run = {
 	FRAME_run01,
-   	FRAME_run02,
-   	soldierh_frames_start_run,
-   	soldierh_run
+	FRAME_run02,
+	soldierh_frames_start_run,
+	soldierh_run
 };
 
 mframe_t soldierh_frames_run[] = {
@@ -1881,15 +1881,15 @@ mframe_t soldierh_frames_run[] = {
 
 mmove_t soldierh_move_run = {
 	FRAME_run03,
-   	FRAME_run08,
-   	soldierh_frames_run,
-   	NULL
+	FRAME_run08,
+	soldierh_frames_run,
+	NULL
 };
 
 void
 soldierh_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1922,9 +1922,9 @@ mframe_t soldierh_frames_pain1[] = {
 
 mmove_t soldierh_move_pain1 = {
 	FRAME_pain101,
-   	FRAME_pain105,
-   	soldierh_frames_pain1,
-   	soldierh_run
+	FRAME_pain105,
+	soldierh_frames_pain1,
+	soldierh_run
 };
 
 mframe_t soldierh_frames_pain2[] = {
@@ -1939,9 +1939,9 @@ mframe_t soldierh_frames_pain2[] = {
 
 mmove_t soldierh_move_pain2 = {
 	FRAME_pain201,
-   	FRAME_pain207,
-   	soldierh_frames_pain2,
-   	soldierh_run
+	FRAME_pain207,
+	soldierh_frames_pain2,
+	soldierh_run
 };
 
 mframe_t soldierh_frames_pain3[] = {
@@ -1967,9 +1967,9 @@ mframe_t soldierh_frames_pain3[] = {
 
 mmove_t soldierh_move_pain3 = {
 	FRAME_pain301,
-   	FRAME_pain318,
-   	soldierh_frames_pain3,
-   	soldierh_run
+	FRAME_pain318,
+	soldierh_frames_pain3,
+	soldierh_run
 };
 
 mframe_t soldierh_frames_pain4[] = {
@@ -1994,19 +1994,19 @@ mframe_t soldierh_frames_pain4[] = {
 
 mmove_t soldierh_move_pain4 = {
 	FRAME_pain401,
-   	FRAME_pain417,
-   	soldierh_frames_pain4,
-   	soldierh_run
+	FRAME_pain417,
+	soldierh_frames_pain4,
+	soldierh_run
 };
 
 void
 soldierh_pain(edict_t *self, edict_t *other /* unused */,
-	   	float kick /* unused */, int damage /* unused */)
+		float kick /* unused */, int damage /* unused */)
 {
 	float r;
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2082,7 +2082,7 @@ soldierh_laserbeam(edict_t *self, int flash_index)
 	vec3_t tempvec;
 	edict_t *ent;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2138,7 +2138,7 @@ soldierh_fire(edict_t *self, int flash_number)
 	float r, u;
 	int flash_index;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2215,7 +2215,7 @@ soldierh_fire(edict_t *self, int flash_number)
 void
 soldierh_hyper_refire1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2240,7 +2240,7 @@ soldierh_hyper_refire1(edict_t *self)
 void
 soldierh_ripper1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2258,7 +2258,7 @@ soldierh_ripper1(edict_t *self)
 void
 soldierh_fire1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2269,7 +2269,7 @@ soldierh_fire1(edict_t *self)
 void
 soldierh_attack1_refire1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2297,7 +2297,7 @@ soldierh_attack1_refire1(edict_t *self)
 void
 soldierh_attack1_refire2(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2321,7 +2321,7 @@ soldierh_attack1_refire2(edict_t *self)
 void
 soldierh_hyper_sound(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2357,15 +2357,15 @@ mframe_t soldierh_frames_attack1[] = {
 
 mmove_t soldierh_move_attack1 = {
 	FRAME_attak101,
-   	FRAME_attak112,
-   	soldierh_frames_attack1,
-   	soldierh_run
+	FRAME_attak112,
+	soldierh_frames_attack1,
+	soldierh_run
 };
 
 void
 soldierh_hyper_refire2(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2390,7 +2390,7 @@ soldierh_hyper_refire2(edict_t *self)
 void
 soldierh_ripper2(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2408,7 +2408,7 @@ soldierh_ripper2(edict_t *self)
 void
 soldierh_fire2(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2419,7 +2419,7 @@ soldierh_fire2(edict_t *self)
 void
 soldierh_attack2_refire1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2447,7 +2447,7 @@ soldierh_attack2_refire1(edict_t *self)
 void
 soldierh_attack2_refire2(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2493,15 +2493,15 @@ mframe_t soldierh_frames_attack2[] = {
 
 mmove_t soldierh_move_attack2 = {
 	FRAME_attak201,
-   	FRAME_attak218,
-   	soldierh_frames_attack2,
-   	soldierh_run
+	FRAME_attak218,
+	soldierh_frames_attack2,
+	soldierh_run
 };
 
 void
 soldierh_duck_down(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2521,7 +2521,7 @@ soldierh_duck_down(edict_t *self)
 void
 soldierh_duck_up(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2535,7 +2535,7 @@ soldierh_duck_up(edict_t *self)
 void
 soldierh_fire3(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2547,7 +2547,7 @@ soldierh_fire3(edict_t *self)
 void
 soldierh_attack3_refire(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2572,15 +2572,15 @@ mframe_t soldierh_frames_attack3[] = {
 
 mmove_t soldierh_move_attack3 = {
 	FRAME_attak301,
-   	FRAME_attak309,
-   	soldierh_frames_attack3,
-   	soldierh_run
+	FRAME_attak309,
+	soldierh_frames_attack3,
+	soldierh_run
 };
 
 void
 soldierh_fire4(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2599,15 +2599,15 @@ mframe_t soldierh_frames_attack4[] = {
 
 mmove_t soldierh_move_attack4 = {
 	FRAME_attak401,
-   	FRAME_attak406,
-   	soldierh_frames_attack4,
-   	soldierh_run
+	FRAME_attak406,
+	soldierh_frames_attack4,
+	soldierh_run
 };
 
 void
 soldierh_fire8(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2618,7 +2618,7 @@ soldierh_fire8(edict_t *self)
 void
 soldierh_attack6_refire(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2658,15 +2658,15 @@ mframe_t soldierh_frames_attack6[] = {
 
 mmove_t soldierh_move_attack6 = {
 	FRAME_runs01,
-   	FRAME_runs14,
-   	soldierh_frames_attack6,
-   	soldierh_run
+	FRAME_runs14,
+	soldierh_frames_attack6,
+	soldierh_run
 };
 
 void
 soldierh_attack(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2691,7 +2691,7 @@ soldierh_attack(edict_t *self)
 void
 soldierh_sight(edict_t *self, edict_t *other /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2724,7 +2724,7 @@ soldierh_sight(edict_t *self, edict_t *other /* unused */)
 void
 soldierh_duck_hold(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2749,9 +2749,9 @@ mframe_t soldierh_frames_duck[] = {
 
 mmove_t soldierh_move_duck = {
 	FRAME_duck01,
-   	FRAME_duck05,
-   	soldierh_frames_duck,
-   	soldierh_run
+	FRAME_duck05,
+	soldierh_frames_duck,
+	soldierh_run
 };
 
 void
@@ -2759,7 +2759,7 @@ soldierh_dodge(edict_t *self, edict_t *attacker, float eta)
 {
 	float r;
 
-  	if (!self || !attacker)
+	if (!self || !attacker)
 	{
 		return;
 	}
@@ -2819,7 +2819,7 @@ soldierh_dodge(edict_t *self, edict_t *attacker, float eta)
 void
 soldierh_fire6(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2834,7 +2834,7 @@ soldierh_fire6(edict_t *self)
 void
 soldierh_fire7(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2849,7 +2849,7 @@ soldierh_fire7(edict_t *self)
 void
 soldierh_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -2906,9 +2906,9 @@ mframe_t soldierh_frames_death1[] = {
 
 mmove_t soldierh_move_death1 = {
 	FRAME_death101,
-   	FRAME_death136,
-   	soldierh_frames_death1,
-   	soldierh_dead
+	FRAME_death136,
+	soldierh_frames_death1,
+	soldierh_dead
 };
 
 mframe_t soldierh_frames_death2[] = {
@@ -2954,9 +2954,9 @@ mframe_t soldierh_frames_death2[] = {
 
 mmove_t soldierh_move_death2 = {
 	FRAME_death201,
-   	FRAME_death235,
-   	soldierh_frames_death2,
-   	soldierh_dead
+	FRAME_death235,
+	soldierh_frames_death2,
+	soldierh_dead
 };
 
 mframe_t soldierh_frames_death3[] = {
@@ -3013,9 +3013,9 @@ mframe_t soldierh_frames_death3[] = {
 
 mmove_t soldierh_move_death3 = {
 	FRAME_death301,
-   	FRAME_death345,
-   	soldierh_frames_death3,
-   	soldierh_dead
+	FRAME_death345,
+	soldierh_frames_death3,
+	soldierh_dead
 };
 
 mframe_t soldierh_frames_death4[] = {
@@ -3081,9 +3081,9 @@ mframe_t soldierh_frames_death4[] = {
 
 mmove_t soldierh_move_death4 = {
 	FRAME_death401,
-   	FRAME_death453,
-   	soldierh_frames_death4,
-   	soldierh_dead
+	FRAME_death453,
+	soldierh_frames_death4,
+	soldierh_dead
 };
 
 mframe_t soldierh_frames_death5[] = {
@@ -3117,9 +3117,9 @@ mframe_t soldierh_frames_death5[] = {
 
 mmove_t soldierh_move_death5 = {
 	FRAME_death501,
-   	FRAME_death524,
-   	soldierh_frames_death5,
-   	soldierh_dead
+	FRAME_death524,
+	soldierh_frames_death5,
+	soldierh_dead
 };
 
 mframe_t soldierh_frames_death6[] = {
@@ -3137,9 +3137,9 @@ mframe_t soldierh_frames_death6[] = {
 
 mmove_t soldierh_move_death6 = {
 	FRAME_death601,
-   	FRAME_death610,
-   	soldierh_frames_death6,
-   	soldierh_dead
+	FRAME_death610,
+	soldierh_frames_death6,
+	soldierh_dead
 };
 
 void
@@ -3148,7 +3148,7 @@ soldierh_die(edict_t *self, edict_t *inflictor /* unused */,
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -3227,7 +3227,7 @@ soldierh_die(edict_t *self, edict_t *inflictor /* unused */,
 void
 SP_monster_soldier_h(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -3271,7 +3271,7 @@ SP_monster_soldier_h(edict_t *self)
 void
 SP_monster_soldier_ripper(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -3303,7 +3303,7 @@ SP_monster_soldier_ripper(edict_t *self)
 void
 SP_monster_soldier_hypergun(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -3333,7 +3333,7 @@ SP_monster_soldier_hypergun(edict_t *self)
 void
 SP_monster_soldier_lasergun(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

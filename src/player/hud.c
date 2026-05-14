@@ -10,7 +10,7 @@
 void
 MoveClientToIntermission(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -306,7 +306,7 @@ HelpComputerMessage(edict_t *ent)
 	char string[1024];
 	char *sk;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -376,7 +376,7 @@ G_SetStats(edict_t *ent)
 	int index, cells = 0;
 	int power_armor_type;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -410,10 +410,10 @@ G_SetStats(edict_t *ent)
 
 		if (cells == 0)
 		{
-		  	/* ran out of cells for power armor */
+			/* ran out of cells for power armor */
 			ent->flags &= ~FL_POWER_ARMOR;
 			gi.sound(ent, CHAN_ITEM, gi.soundindex( "misc/power2.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 			power_armor_type = 0;
 		}
 	}
@@ -456,7 +456,7 @@ G_SetStats(edict_t *ent)
 	{
 		ent->client->ps.stats[STAT_TIMER_ICON] = gi.imageindex("p_quadfire");
 		ent->client->ps.stats[STAT_TIMER] = (ent->client->quadfire_framenum
-			   	- level.framenum) / 10;
+				- level.framenum) / 10;
 	}
 	else if (ent->client->invincible_framenum > level.framenum)
 	{
@@ -564,7 +564,7 @@ G_CheckChaseStats(edict_t *ent)
 	int i;
 	gclient_t *cl;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -586,7 +586,7 @@ G_CheckChaseStats(edict_t *ent)
 void
 G_SetSpectatorStats(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}

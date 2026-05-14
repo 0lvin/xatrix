@@ -23,7 +23,7 @@ M_CheckBottom(edict_t *ent)
 	int x, y;
 	float mid, bottom;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return false;
 	}
@@ -115,7 +115,7 @@ SV_movestep(edict_t *ent, vec3_t move, qboolean relink)
 	vec3_t test;
 	int contents;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return false;
 	}
@@ -394,7 +394,7 @@ M_ChangeYaw(edict_t *ent)
 	float move;
 	float speed;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -453,7 +453,7 @@ SV_StepDirection(edict_t *ent, float yaw, float dist)
 	vec3_t move, oldorigin;
 	float delta;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return false;
 	}
@@ -491,7 +491,7 @@ SV_StepDirection(edict_t *ent, float yaw, float dist)
 void
 SV_FixCheckBottom(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -655,7 +655,7 @@ M_MoveToGoal(edict_t *ent, float dist)
 {
 	edict_t *goal;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -688,7 +688,7 @@ M_walkmove(edict_t *ent, float yaw, float dist)
 {
 	vec3_t move;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return false;
 	}

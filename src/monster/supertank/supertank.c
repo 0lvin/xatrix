@@ -27,7 +27,7 @@ void supertank_reattack1(edict_t *self);
 void
 TreadSound(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -38,7 +38,7 @@ TreadSound(edict_t *self)
 void
 supertank_search(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -118,15 +118,15 @@ mframe_t supertank_frames_stand[] = {
 
 mmove_t supertank_move_stand = {
 	FRAME_stand_1,
-   	FRAME_stand_60,
-   	supertank_frames_stand,
-   	NULL
+	FRAME_stand_60,
+	supertank_frames_stand,
+	NULL
 };
 
 void
 supertank_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -157,9 +157,9 @@ mframe_t supertank_frames_run[] = {
 
 mmove_t supertank_move_run = {
 	FRAME_forwrd_1,
-   	FRAME_forwrd_18,
-   	supertank_frames_run,
-   	NULL
+	FRAME_forwrd_18,
+	supertank_frames_run,
+	NULL
 };
 
 mframe_t supertank_frames_forward[] = {
@@ -185,15 +185,15 @@ mframe_t supertank_frames_forward[] = {
 
 mmove_t supertank_move_forward = {
 	FRAME_forwrd_1,
-   	FRAME_forwrd_18,
-   	supertank_frames_forward,
-   	NULL
+	FRAME_forwrd_18,
+	supertank_frames_forward,
+	NULL
 };
 
 void
 supertank_forward(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -204,7 +204,7 @@ supertank_forward(edict_t *self)
 void
 supertank_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -215,7 +215,7 @@ supertank_walk(edict_t *self)
 void
 supertank_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -253,9 +253,9 @@ mframe_t supertank_frames_turn_right[] = {
 
 mmove_t supertank_move_turn_right = {
 	FRAME_right_1,
-   	FRAME_right_18,
-   	supertank_frames_turn_right,
-   	supertank_run
+	FRAME_right_18,
+	supertank_frames_turn_right,
+	supertank_run
 };
 
 mframe_t supertank_frames_turn_left[] = {
@@ -281,9 +281,9 @@ mframe_t supertank_frames_turn_left[] = {
 
 mmove_t supertank_move_turn_left = {
 	FRAME_left_1,
-   	FRAME_left_18,
-   	supertank_frames_turn_left,
-   	supertank_run
+	FRAME_left_18,
+	supertank_frames_turn_left,
+	supertank_run
 };
 
 mframe_t supertank_frames_pain3[] = {
@@ -295,9 +295,9 @@ mframe_t supertank_frames_pain3[] = {
 
 mmove_t supertank_move_pain3 = {
 	FRAME_pain3_9,
-   	FRAME_pain3_12,
-   	supertank_frames_pain3,
-   	supertank_run
+	FRAME_pain3_12,
+	supertank_frames_pain3,
+	supertank_run
 };
 
 mframe_t supertank_frames_pain2[] = {
@@ -309,9 +309,9 @@ mframe_t supertank_frames_pain2[] = {
 
 mmove_t supertank_move_pain2 = {
 	FRAME_pain2_5,
-   	FRAME_pain2_8,
-   	supertank_frames_pain2,
-   	supertank_run
+	FRAME_pain2_8,
+	supertank_frames_pain2,
+	supertank_run
 };
 
 mframe_t supertank_frames_pain1[] = {
@@ -323,9 +323,9 @@ mframe_t supertank_frames_pain1[] = {
 
 mmove_t supertank_move_pain1 = {
 	FRAME_pain1_1,
-   	FRAME_pain1_4,
-   	supertank_frames_pain1,
-   	supertank_run
+	FRAME_pain1_4,
+	supertank_frames_pain1,
+	supertank_run
 };
 
 mframe_t supertank_frames_death1[] = {
@@ -357,9 +357,9 @@ mframe_t supertank_frames_death1[] = {
 
 mmove_t supertank_move_death = {
 	FRAME_death_1,
-   	FRAME_death_24,
-   	supertank_frames_death1,
-   	supertank_dead
+	FRAME_death_24,
+	supertank_frames_death1,
+	supertank_dead
 };
 
 mframe_t supertank_frames_backward[] = {
@@ -385,9 +385,9 @@ mframe_t supertank_frames_backward[] = {
 
 mmove_t supertank_move_backward = {
 	FRAME_backwd_1,
-   	FRAME_backwd_18,
-   	supertank_frames_backward,
-   	NULL
+	FRAME_backwd_18,
+	supertank_frames_backward,
+	NULL
 };
 
 mframe_t supertank_frames_attack4[] = {
@@ -401,9 +401,9 @@ mframe_t supertank_frames_attack4[] = {
 
 mmove_t supertank_move_attack4 = {
 	FRAME_attak4_1,
-   	FRAME_attak4_6,
-   	supertank_frames_attack4,
-   	supertank_run
+	FRAME_attak4_6,
+	supertank_frames_attack4,
+	supertank_run
 };
 
 mframe_t supertank_frames_attack3[] = {
@@ -438,9 +438,9 @@ mframe_t supertank_frames_attack3[] = {
 
 mmove_t supertank_move_attack3 = {
 	FRAME_attak3_1,
-   	FRAME_attak3_27,
-   	supertank_frames_attack3,
-   	supertank_run
+	FRAME_attak3_27,
+	supertank_frames_attack3,
+	supertank_run
 };
 
 mframe_t supertank_frames_attack2[] = {
@@ -475,9 +475,9 @@ mframe_t supertank_frames_attack2[] = {
 
 mmove_t supertank_move_attack2 = {
 	FRAME_attak2_1,
-   	FRAME_attak2_27,
-   	supertank_frames_attack2,
-   	supertank_run
+	FRAME_attak2_27,
+	supertank_frames_attack2,
+	supertank_run
 };
 
 mframe_t supertank_frames_attack1[] = {
@@ -491,9 +491,9 @@ mframe_t supertank_frames_attack1[] = {
 
 mmove_t supertank_move_attack1 = {
 	FRAME_attak1_1,
-   	FRAME_attak1_6,
-   	supertank_frames_attack1,
-   	supertank_reattack1
+	FRAME_attak1_6,
+	supertank_frames_attack1,
+	supertank_reattack1
 };
 
 mframe_t supertank_frames_end_attack1[] = {
@@ -515,15 +515,15 @@ mframe_t supertank_frames_end_attack1[] = {
 
 mmove_t supertank_move_end_attack1 = {
 	FRAME_attak1_7,
-   	FRAME_attak1_20,
-   	supertank_frames_end_attack1,
-   	supertank_run
+	FRAME_attak1_20,
+	supertank_frames_end_attack1,
+	supertank_run
 };
 
 void
 supertank_reattack1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -547,9 +547,9 @@ supertank_reattack1(edict_t *self)
 
 void
 supertank_pain(edict_t *self, edict_t *other /* unused */,
-	   	float kick /* unused */, int damage)
+		float kick /* unused */, int damage)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -616,7 +616,7 @@ supertankRocket(edict_t *self)
 	vec3_t vec;
 	int flash_number;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -655,7 +655,7 @@ supertankMachineGun(edict_t *self)
 	vec3_t forward, right;
 	int flash_number;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -689,7 +689,7 @@ supertank_attack(edict_t *self)
 	vec3_t vec;
 	float range;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -718,7 +718,7 @@ supertank_attack(edict_t *self)
 void
 supertank_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -737,7 +737,7 @@ BossExplode(edict_t *self)
 	vec3_t org;
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -812,7 +812,7 @@ supertank_die(edict_t *self, edict_t *inflictor /* unused */,
 		edict_t *attacker /* unused */, int damage /* unused */,
 		vec3_t point /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -830,7 +830,7 @@ supertank_die(edict_t *self, edict_t *inflictor /* unused */,
 void
 SP_monster_supertank(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

@@ -29,7 +29,7 @@ void hover_die(edict_t *self, edict_t *inflictor, edict_t *attacker,
 void
 hover_sight(edict_t *self, edict_t *other)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -40,7 +40,7 @@ hover_sight(edict_t *self, edict_t *other)
 void
 hover_search(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -90,9 +90,9 @@ mframe_t hover_frames_stand[] = {
 
 mmove_t hover_move_stand = {
 	FRAME_stand01,
-   	FRAME_stand30,
-   	hover_frames_stand,
-   	NULL
+	FRAME_stand30,
+	hover_frames_stand,
+	NULL
 };
 
 mframe_t hover_frames_stop1[] = {
@@ -109,9 +109,9 @@ mframe_t hover_frames_stop1[] = {
 
 mmove_t hover_move_stop1 = {
 	FRAME_stop101,
-   	FRAME_stop109,
-   	hover_frames_stop1,
-   	NULL
+	FRAME_stop109,
+	hover_frames_stop1,
+	NULL
 };
 
 mframe_t hover_frames_stop2[] = {
@@ -127,9 +127,9 @@ mframe_t hover_frames_stop2[] = {
 
 mmove_t hover_move_stop2 = {
 	FRAME_stop201,
-   	FRAME_stop208,
-   	hover_frames_stop2,
-   	NULL
+	FRAME_stop208,
+	hover_frames_stop2,
+	NULL
 };
 
 mframe_t hover_frames_takeoff[] = {
@@ -167,9 +167,9 @@ mframe_t hover_frames_takeoff[] = {
 
 mmove_t hover_move_takeoff = {
 	FRAME_takeof01,
-   	FRAME_takeof30,
-   	hover_frames_takeoff,
-   	NULL
+	FRAME_takeof30,
+	hover_frames_takeoff,
+	NULL
 };
 
 mframe_t hover_frames_pain3[] = {
@@ -186,9 +186,9 @@ mframe_t hover_frames_pain3[] = {
 
 mmove_t hover_move_pain3 = {
 	FRAME_pain301,
-   	FRAME_pain309,
-   	hover_frames_pain3,
-   	hover_run
+	FRAME_pain309,
+	hover_frames_pain3,
+	hover_run
 };
 
 mframe_t hover_frames_pain2[] = {
@@ -208,9 +208,9 @@ mframe_t hover_frames_pain2[] = {
 
 mmove_t hover_move_pain2 = {
 	FRAME_pain201,
-   	FRAME_pain212,
-   	hover_frames_pain2,
-   	hover_run
+	FRAME_pain212,
+	hover_frames_pain2,
+	hover_run
 };
 
 mframe_t hover_frames_pain1[] = {
@@ -246,9 +246,9 @@ mframe_t hover_frames_pain1[] = {
 
 mmove_t hover_move_pain1 = {
 	FRAME_pain101,
-   	FRAME_pain128,
-   	hover_frames_pain1,
-   	hover_run
+	FRAME_pain128,
+	hover_frames_pain1,
+	hover_run
 };
 
 mframe_t hover_frames_land[] = {
@@ -257,9 +257,9 @@ mframe_t hover_frames_land[] = {
 
 mmove_t hover_move_land = {
 	FRAME_land01,
-   	FRAME_land01,
-   	hover_frames_land,
-   	NULL
+	FRAME_land01,
+	hover_frames_land,
+	NULL
 };
 
 mframe_t hover_frames_forward[] = {
@@ -302,9 +302,9 @@ mframe_t hover_frames_forward[] = {
 
 mmove_t hover_move_forward = {
 	FRAME_forwrd01,
-   	FRAME_forwrd35,
-   	hover_frames_forward,
-   	NULL
+	FRAME_forwrd35,
+	hover_frames_forward,
+	NULL
 };
 
 mframe_t hover_frames_walk[] = {
@@ -347,9 +347,9 @@ mframe_t hover_frames_walk[] = {
 
 mmove_t hover_move_walk = {
 	FRAME_forwrd01,
-   	FRAME_forwrd35,
-   	hover_frames_walk,
-   	NULL
+	FRAME_forwrd35,
+	hover_frames_walk,
+	NULL
 };
 
 mframe_t hover_frames_run[] = {
@@ -392,9 +392,9 @@ mframe_t hover_frames_run[] = {
 
 mmove_t hover_move_run = {
 	FRAME_forwrd01,
-   	FRAME_forwrd35,
-   	hover_frames_run,
-   	NULL
+	FRAME_forwrd35,
+	hover_frames_run,
+	NULL
 };
 
 mframe_t hover_frames_death1[] = {
@@ -413,9 +413,9 @@ mframe_t hover_frames_death1[] = {
 
 mmove_t hover_move_death1 = {
 	FRAME_death101,
-   	FRAME_death111,
-   	hover_frames_death1,
-   	hover_dead
+	FRAME_death111,
+	hover_frames_death1,
+	hover_dead
 };
 
 mframe_t hover_frames_backward[] = {
@@ -447,9 +447,9 @@ mframe_t hover_frames_backward[] = {
 
 mmove_t hover_move_backward = {
 	FRAME_backwd01,
-   	FRAME_backwd24,
-   	hover_frames_backward,
-   	NULL
+	FRAME_backwd24,
+	hover_frames_backward,
+	NULL
 };
 
 mframe_t hover_frames_start_attack[] = {
@@ -460,9 +460,9 @@ mframe_t hover_frames_start_attack[] = {
 
 mmove_t hover_move_start_attack = {
 	FRAME_attak101,
-   	FRAME_attak103,
-   	hover_frames_start_attack,
-   	hover_attack
+	FRAME_attak103,
+	hover_frames_start_attack,
+	hover_attack
 };
 
 mframe_t hover_frames_attack1[] = {
@@ -473,9 +473,9 @@ mframe_t hover_frames_attack1[] = {
 
 mmove_t hover_move_attack1 = {
 	FRAME_attak104,
-   	FRAME_attak106,
-   	hover_frames_attack1,
-   	NULL
+	FRAME_attak106,
+	hover_frames_attack1,
+	NULL
 };
 
 mframe_t hover_frames_end_attack[] = {
@@ -485,15 +485,15 @@ mframe_t hover_frames_end_attack[] = {
 
 mmove_t hover_move_end_attack = {
 	FRAME_attak107,
-   	FRAME_attak108,
-   	hover_frames_end_attack,
+	FRAME_attak108,
+	hover_frames_end_attack,
 	hover_run
 };
 
 void
 hover_reattack(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -522,7 +522,7 @@ hover_fire_blaster(edict_t *self)
 	vec3_t dir;
 	int effect;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -550,7 +550,7 @@ hover_fire_blaster(edict_t *self)
 void
 hover_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -561,7 +561,7 @@ hover_stand(edict_t *self)
 void
 hover_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -579,7 +579,7 @@ hover_run(edict_t *self)
 void
 hover_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -590,7 +590,7 @@ hover_walk(edict_t *self)
 void
 hover_start_attack(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -601,7 +601,7 @@ hover_start_attack(edict_t *self)
 void
 hover_attack(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -613,7 +613,7 @@ void
 hover_pain(edict_t *self, edict_t *other /* unused */,
 		float kick /* unused */, int damage)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -658,7 +658,7 @@ hover_pain(edict_t *self, edict_t *other /* unused */,
 void
 hover_deadthink(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -675,7 +675,7 @@ hover_deadthink(edict_t *self)
 void
 hover_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -696,7 +696,7 @@ hover_die(edict_t *self, edict_t *inflictor /* unused */,
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -747,7 +747,7 @@ hover_die(edict_t *self, edict_t *inflictor /* unused */,
 void
 SP_monster_hover(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

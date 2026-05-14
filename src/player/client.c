@@ -51,7 +51,7 @@ SP_CreateUnnamedSpawn(edict_t *self)
 void
 SP_info_player_start(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -72,7 +72,7 @@ SP_info_player_start(edict_t *self)
 void
 SP_info_player_deathmatch(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -93,7 +93,7 @@ SP_info_player_deathmatch(edict_t *self)
 void
 SP_info_player_coop(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -138,7 +138,7 @@ IsFemale(edict_t *ent)
 {
 	char *info;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return false;
 	}
@@ -163,7 +163,7 @@ IsNeutral(edict_t *ent)
 {
 	char *info;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return false;
 	}
@@ -186,7 +186,7 @@ IsNeutral(edict_t *ent)
 
 void
 ClientObituary(edict_t *self, edict_t *inflictor /* unused */,
-	   	edict_t *attacker)
+		edict_t *attacker)
 {
 	int mod;
 	char *message;
@@ -461,7 +461,7 @@ TossClientWeapon(edict_t *self)
 	qboolean quadfire;
 	float spread;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -816,7 +816,7 @@ SaveClientData(void)
 void
 FetchClientEntData(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1000,7 +1000,7 @@ SelectCoopSpawnPoint(edict_t *ent)
 	edict_t *spot = NULL;
 	char *target;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return NULL;
 	}
@@ -1061,7 +1061,7 @@ SelectSpawnPoint(edict_t *ent, vec3_t origin, vec3_t angles)
 	int counter = 0;
 	vec3_t d;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1185,12 +1185,12 @@ InitBodyQue(void)
 
 void
 body_die(edict_t *self, edict_t *inflictor /* unused */,
-	   	edict_t *attacker /* unused */, int damage,
+		edict_t *attacker /* unused */, int damage,
 		vec3_t point /* unused */)
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1217,7 +1217,7 @@ CopyToBodyQue(edict_t *ent)
 {
 	edict_t *body;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1252,7 +1252,7 @@ CopyToBodyQue(edict_t *ent)
 void
 respawn(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -1294,7 +1294,7 @@ spectator_respawn(edict_t *ent)
 {
 	int i, numspec;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1408,7 +1408,7 @@ PutClientInServer(edict_t *ent)
 	client_persistant_t saved;
 	client_respawn_t resp;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1585,7 +1585,7 @@ PutClientInServer(edict_t *ent)
 void
 ClientBeginDeathmatch(edict_t *ent)
 {
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1625,7 +1625,7 @@ ClientBegin(edict_t *ent)
 {
 	int i;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -1875,7 +1875,7 @@ ClientDisconnect(edict_t *ent)
 {
 	int playernum;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -2205,7 +2205,7 @@ ClientBeginServerFrame(edict_t *ent)
 	gclient_t *client;
 	int buttonMask;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}

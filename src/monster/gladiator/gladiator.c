@@ -22,7 +22,7 @@ static int sound_sight;
 void
 gladiator_idle(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -33,7 +33,7 @@ gladiator_idle(edict_t *self)
 void
 gladiator_sight(edict_t *self, edict_t *other /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -44,7 +44,7 @@ gladiator_sight(edict_t *self, edict_t *other /* unused */)
 void
 gladiator_search(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -55,7 +55,7 @@ gladiator_search(edict_t *self)
 void
 gladiator_cleaver_swing(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -75,15 +75,15 @@ mframe_t gladiator_frames_stand[] = {
 
 mmove_t gladiator_move_stand = {
 	FRAME_stand1,
-   	FRAME_stand7,
-   	gladiator_frames_stand,
-   	NULL
+	FRAME_stand7,
+	gladiator_frames_stand,
+	NULL
 };
 
 void
 gladiator_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -112,15 +112,15 @@ mframe_t gladiator_frames_walk[] = {
 
 mmove_t gladiator_move_walk = {
 	FRAME_walk1,
-   	FRAME_walk16,
-   	gladiator_frames_walk,
-   	NULL
+	FRAME_walk16,
+	gladiator_frames_walk,
+	NULL
 };
 
 void
 gladiator_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -139,15 +139,15 @@ mframe_t gladiator_frames_run[] = {
 
 mmove_t gladiator_move_run = {
 	FRAME_run1,
-   	FRAME_run6,
-   	gladiator_frames_run,
-   	NULL
+	FRAME_run6,
+	gladiator_frames_run,
+	NULL
 };
 
 void
 gladiator_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -167,7 +167,7 @@ GaldiatorMelee(edict_t *self)
 {
 	vec3_t aim;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -206,15 +206,15 @@ mframe_t gladiator_frames_attack_melee[] = {
 
 mmove_t gladiator_move_attack_melee = {
 	FRAME_melee1,
-   	FRAME_melee17,
-   	gladiator_frames_attack_melee,
-   	gladiator_run
+	FRAME_melee17,
+	gladiator_frames_attack_melee,
+	gladiator_run
 };
 
 void
 gladiator_melee(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -229,7 +229,7 @@ GladiatorGun(edict_t *self)
 	vec3_t dir;
 	vec3_t forward, right;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -259,9 +259,9 @@ mframe_t gladiator_frames_attack_gun[] = {
 
 mmove_t gladiator_move_attack_gun = {
 	FRAME_attack1,
-   	FRAME_attack9,
-   	gladiator_frames_attack_gun,
-   	gladiator_run
+	FRAME_attack9,
+	gladiator_frames_attack_gun,
+	gladiator_run
 };
 
 void
@@ -270,7 +270,7 @@ gladiator_attack(edict_t *self)
 	float range;
 	vec3_t v;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -308,9 +308,9 @@ mframe_t gladiator_frames_pain[] = {
 
 mmove_t gladiator_move_pain = {
 	FRAME_pain1,
-   	FRAME_pain6,
-   	gladiator_frames_pain,
-   	gladiator_run
+	FRAME_pain6,
+	gladiator_frames_pain,
+	gladiator_run
 };
 
 mframe_t gladiator_frames_pain_air[] = {
@@ -325,16 +325,16 @@ mframe_t gladiator_frames_pain_air[] = {
 
 mmove_t gladiator_move_pain_air = {
 	FRAME_painup1,
-   	FRAME_painup7,
-   	gladiator_frames_pain_air,
-   	gladiator_run
+	FRAME_painup7,
+	gladiator_frames_pain_air,
+	gladiator_run
 };
 
 void
 gladiator_pain(edict_t *self, edict_t *other /* unused */,
 		float kick /* unused */, int damage)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -384,7 +384,7 @@ gladiator_pain(edict_t *self, edict_t *other /* unused */,
 void
 gladiator_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -424,19 +424,19 @@ mframe_t gladiator_frames_death[] = {
 
 mmove_t gladiator_move_death = {
 	FRAME_death1,
-   	FRAME_death22,
-   	gladiator_frames_death,
-   	gladiator_dead
+	FRAME_death22,
+	gladiator_frames_death,
+	gladiator_dead
 };
 
 void
 gladiator_die(edict_t *self, edict_t *inflictor /* unused */,
-	   	edict_t *attacker /* unused */, int damage /*unused */,
+		edict_t *attacker /* unused */, int damage /*unused */,
 		vec3_t point)
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -484,7 +484,7 @@ gladiator_die(edict_t *self, edict_t *inflictor /* unused */,
 void
 SP_monster_gladiator(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

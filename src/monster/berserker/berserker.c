@@ -18,7 +18,7 @@ static int sound_search;
 void
 berserk_sight(edict_t *self, edict_t *other /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -29,7 +29,7 @@ berserk_sight(edict_t *self, edict_t *other /* unused */)
 void
 berserk_search(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -49,15 +49,15 @@ mframe_t berserk_frames_stand[] = {
 
 mmove_t berserk_move_stand = {
 	FRAME_stand1,
-   	FRAME_stand5,
-   	berserk_frames_stand,
-   	NULL
+	FRAME_stand5,
+	berserk_frames_stand,
+	NULL
 };
 
 void
 berserk_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -98,7 +98,7 @@ mmove_t berserk_move_stand_fidget = {
 void
 berserk_fidget(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -147,7 +147,7 @@ mmove_t berserk_move_walk = {
 void
 berserk_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -174,7 +174,7 @@ mmove_t berserk_move_run1 = {
 void
 berserk_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -194,7 +194,7 @@ berserk_attack_spike(edict_t *self)
 {
 	static vec3_t aim = {MELEE_DISTANCE, 0, -24};
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -205,7 +205,7 @@ berserk_attack_spike(edict_t *self)
 void
 berserk_swing(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -236,7 +236,7 @@ berserk_attack_club(edict_t *self)
 {
 	vec3_t aim;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -301,7 +301,7 @@ mmove_t berserk_move_attack_strike = {
 void
 berserk_melee(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -364,7 +364,7 @@ void
 berserk_pain(edict_t *self, edict_t *other /* unsued */,
 		float kick /* unused */, int damage)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -400,7 +400,7 @@ berserk_pain(edict_t *self, edict_t *other /* unsued */,
 void
 berserk_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -460,7 +460,7 @@ berserk_die(edict_t *self, edict_t *inflictor /* unsued */, edict_t *attacker /*
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -509,7 +509,7 @@ berserk_die(edict_t *self, edict_t *inflictor /* unsued */, edict_t *attacker /*
 void
 SP_monster_berserk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

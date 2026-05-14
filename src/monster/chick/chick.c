@@ -35,7 +35,7 @@ static int sound_search;
 void
 ChickMoan(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -85,15 +85,15 @@ mframe_t chick_frames_fidget[] = {
 
 mmove_t chick_move_fidget = {
 	FRAME_stand201,
-   	FRAME_stand230,
-   	chick_frames_fidget,
-   	chick_stand
+	FRAME_stand230,
+	chick_frames_fidget,
+	chick_stand
 };
 
 void
 chick_fidget(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -144,15 +144,15 @@ mframe_t chick_frames_stand[] = {
 
 mmove_t chick_move_stand = {
 	FRAME_stand101,
-   	FRAME_stand130,
-   	chick_frames_stand,
-   	NULL
+	FRAME_stand130,
+	chick_frames_stand,
+	NULL
 };
 
 void
 chick_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -175,9 +175,9 @@ mframe_t chick_frames_start_run[] = {
 
 mmove_t chick_move_start_run = {
 	FRAME_walk01,
-   	FRAME_walk10,
-   	chick_frames_start_run,
-   	chick_run
+	FRAME_walk10,
+	chick_frames_start_run,
+	chick_run
 };
 
 mframe_t chick_frames_run[] = {
@@ -195,9 +195,9 @@ mframe_t chick_frames_run[] = {
 
 mmove_t chick_move_run = {
 	FRAME_walk11,
-   	FRAME_walk20,
-   	chick_frames_run,
-   	NULL
+	FRAME_walk20,
+	chick_frames_run,
+	NULL
 };
 
 mframe_t chick_frames_walk[] = {
@@ -215,15 +215,15 @@ mframe_t chick_frames_walk[] = {
 
 mmove_t chick_move_walk = {
 	FRAME_walk11,
-   	FRAME_walk20,
-   	chick_frames_walk,
-   	NULL
+	FRAME_walk20,
+	chick_frames_walk,
+	NULL
 };
 
 void
 chick_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -234,7 +234,7 @@ chick_walk(edict_t *self)
 void
 chick_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -266,9 +266,9 @@ mframe_t chick_frames_pain1[] = {
 
 mmove_t chick_move_pain1 = {
 	FRAME_pain101,
-   	FRAME_pain105,
-   	chick_frames_pain1,
-   	chick_run
+	FRAME_pain105,
+	chick_frames_pain1,
+	chick_run
 };
 
 mframe_t chick_frames_pain2[] = {
@@ -281,9 +281,9 @@ mframe_t chick_frames_pain2[] = {
 
 mmove_t chick_move_pain2 = {
 	FRAME_pain201,
-   	FRAME_pain205,
-   	chick_frames_pain2,
-   	chick_run
+	FRAME_pain205,
+	chick_frames_pain2,
+	chick_run
 };
 
 mframe_t chick_frames_pain3[] = {
@@ -312,18 +312,18 @@ mframe_t chick_frames_pain3[] = {
 
 mmove_t chick_move_pain3 = {
 	FRAME_pain301,
-   	FRAME_pain321,
-   	chick_frames_pain3,
-   	chick_run
+	FRAME_pain321,
+	chick_frames_pain3,
+	chick_run
 };
 
 void
 chick_pain(edict_t *self, edict_t *other /* unused */,
-	   	float kick /* unused */, int damage)
+		float kick /* unused */, int damage)
 {
 	float r;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -377,7 +377,7 @@ chick_pain(edict_t *self, edict_t *other /* unused */,
 void
 chick_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -418,9 +418,9 @@ mframe_t chick_frames_death2[] = {
 
 mmove_t chick_move_death2 = {
 	FRAME_death201,
-   	FRAME_death223,
-   	chick_frames_death2,
-   	chick_dead
+	FRAME_death223,
+	chick_frames_death2,
+	chick_dead
 };
 
 mframe_t chick_frames_death1[] = {
@@ -440,9 +440,9 @@ mframe_t chick_frames_death1[] = {
 
 mmove_t chick_move_death1 = {
 	FRAME_death101,
-   	FRAME_death112,
-   	chick_frames_death1,
-   	chick_dead
+	FRAME_death112,
+	chick_frames_death1,
+	chick_dead
 };
 
 void
@@ -452,7 +452,7 @@ chick_die(edict_t *self, edict_t *inflictor /* unused */,
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -461,7 +461,7 @@ chick_die(edict_t *self, edict_t *inflictor /* unused */,
 	if (self->health <= self->gib_health)
 	{
 		gi.sound(self, CHAN_VOICE, gi.soundindex("misc/udeath.wav"),
-			   	1, ATTN_NORM, 0);
+				1, ATTN_NORM, 0);
 
 		for (n = 0; n < 2; n++)
 		{
@@ -507,7 +507,7 @@ chick_die(edict_t *self, edict_t *inflictor /* unused */,
 void
 chick_duck_down(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -527,7 +527,7 @@ chick_duck_down(edict_t *self)
 void
 chick_duck_hold(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -545,7 +545,7 @@ chick_duck_hold(edict_t *self)
 void
 chick_duck_up(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -568,9 +568,9 @@ mframe_t chick_frames_duck[] = {
 
 mmove_t chick_move_duck = {
 	FRAME_duck01,
-   	FRAME_duck07,
-   	chick_frames_duck,
-   	chick_run
+	FRAME_duck07,
+	chick_frames_duck,
+	chick_run
 };
 
 void
@@ -600,7 +600,7 @@ ChickSlash(edict_t *self)
 {
 	vec3_t aim;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -618,7 +618,7 @@ ChickRocket(edict_t *self)
 	vec3_t dir;
 	vec3_t vec;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -645,7 +645,7 @@ ChickRocket(edict_t *self)
 void
 Chick_PreAttack1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -656,7 +656,7 @@ Chick_PreAttack1(edict_t *self)
 void
 ChickReload(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -682,9 +682,9 @@ mframe_t chick_frames_start_attack1[] = {
 
 mmove_t chick_move_start_attack1 = {
 	FRAME_attak101,
-   	FRAME_attak113,
-   	chick_frames_start_attack1,
-   	NULL
+	FRAME_attak113,
+	chick_frames_start_attack1,
+	NULL
 };
 
 mframe_t chick_frames_attack1[] = {
@@ -706,9 +706,9 @@ mframe_t chick_frames_attack1[] = {
 
 mmove_t chick_move_attack1 = {
 	FRAME_attak114,
-   	FRAME_attak127,
-   	chick_frames_attack1,
-   	NULL
+	FRAME_attak127,
+	chick_frames_attack1,
+	NULL
 };
 
 mframe_t chick_frames_end_attack1[] = {
@@ -721,15 +721,15 @@ mframe_t chick_frames_end_attack1[] = {
 
 mmove_t chick_move_end_attack1 = {
 	FRAME_attak128,
-   	FRAME_attak132,
-   	chick_frames_end_attack1,
-   	chick_run
+	FRAME_attak132,
+	chick_frames_end_attack1,
+	chick_run
 };
 
 void
 chick_rerocket(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -755,7 +755,7 @@ chick_rerocket(edict_t *self)
 void
 chick_attack1(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -777,9 +777,9 @@ mframe_t chick_frames_slash[] = {
 
 mmove_t chick_move_slash = {
 	FRAME_attak204,
-   	FRAME_attak212,
-   	chick_frames_slash,
-   	NULL
+	FRAME_attak212,
+	chick_frames_slash,
+	NULL
 };
 
 mframe_t chick_frames_end_slash[] = {
@@ -791,15 +791,15 @@ mframe_t chick_frames_end_slash[] = {
 
 mmove_t chick_move_end_slash = {
 	FRAME_attak213,
-   	FRAME_attak216,
-   	chick_frames_end_slash,
-   	chick_run
+	FRAME_attak216,
+	chick_frames_end_slash,
+	chick_run
 };
 
 void
 chick_reslash(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -838,15 +838,15 @@ mframe_t chick_frames_start_slash[] = {
 
 mmove_t chick_move_start_slash = {
 	FRAME_attak201,
-   	FRAME_attak203,
-   	chick_frames_start_slash,
-   	chick_slash
+	FRAME_attak203,
+	chick_frames_start_slash,
+	chick_slash
 };
 
 void
 chick_melee(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -857,7 +857,7 @@ chick_melee(edict_t *self)
 void
 chick_attack(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -868,7 +868,7 @@ chick_attack(edict_t *self)
 void
 chick_sight(edict_t *self, edict_t *other /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -882,7 +882,7 @@ chick_sight(edict_t *self, edict_t *other /* unused */)
 void
 SP_monster_chick(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -944,7 +944,7 @@ SP_monster_chick(edict_t *self)
 void
 SP_monster_chick_heat(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

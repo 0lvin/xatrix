@@ -22,7 +22,7 @@ static int sound_sight;
 void
 gladb_idle(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -33,7 +33,7 @@ gladb_idle(edict_t *self)
 void
 gladb_sight(edict_t *self, edict_t *other /* unused */)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -44,7 +44,7 @@ gladb_sight(edict_t *self, edict_t *other /* unused */)
 void
 gladb_search(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -55,7 +55,7 @@ gladb_search(edict_t *self)
 void
 gladb_cleaver_swing(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -75,15 +75,15 @@ mframe_t gladb_frames_stand[] = {
 
 mmove_t gladb_move_stand = {
 	FRAME_stand1,
-   	FRAME_stand7,
-   	gladb_frames_stand,
-   	NULL
+	FRAME_stand7,
+	gladb_frames_stand,
+	NULL
 };
 
 void
 gladb_stand(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -112,15 +112,15 @@ mframe_t gladb_frames_walk[] = {
 
 mmove_t gladb_move_walk = {
 	FRAME_walk1,
-   	FRAME_walk16,
-   	gladb_frames_walk,
-   	NULL
+	FRAME_walk16,
+	gladb_frames_walk,
+	NULL
 };
 
 void
 gladb_walk(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -139,15 +139,15 @@ mframe_t gladb_frames_run[] = {
 
 mmove_t gladb_move_run = {
 	FRAME_run1,
-   	FRAME_run6,
-   	gladb_frames_run,
-   	NULL
+	FRAME_run6,
+	gladb_frames_run,
+	NULL
 };
 
 void
 gladb_run(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -167,7 +167,7 @@ GladbMelee(edict_t *self)
 {
 	vec3_t aim;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -206,15 +206,15 @@ mframe_t gladb_frames_attack_melee[] = {
 
 mmove_t gladb_move_attack_melee = {
 	FRAME_melee1,
-   	FRAME_melee17,
-   	gladb_frames_attack_melee,
-   	gladb_run
+	FRAME_melee17,
+	gladb_frames_attack_melee,
+	gladb_run
 };
 
 void
 gladb_melee(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -229,7 +229,7 @@ gladbGun(edict_t *self)
 	vec3_t dir;
 	vec3_t forward, right;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -248,7 +248,7 @@ gladbGun(edict_t *self)
 void
 gladbGun_check(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -273,9 +273,9 @@ mframe_t gladb_frames_attack_gun[] = {
 
 mmove_t gladb_move_attack_gun = {
 	FRAME_attack1,
-   	FRAME_attack9,
-   	gladb_frames_attack_gun,
-   	gladb_run
+	FRAME_attack9,
+	gladb_frames_attack_gun,
+	gladb_run
 };
 
 void
@@ -284,7 +284,7 @@ gladb_attack(edict_t *self)
 	float range;
 	vec3_t v;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -322,8 +322,8 @@ mframe_t gladb_frames_pain[] = {
 
 mmove_t gladb_move_pain = {
 	FRAME_pain1,
-   	FRAME_pain6,
-   	gladb_frames_pain, gladb_run
+	FRAME_pain6,
+	gladb_frames_pain, gladb_run
 };
 
 mframe_t gladb_frames_pain_air[] = {
@@ -338,16 +338,16 @@ mframe_t gladb_frames_pain_air[] = {
 
 mmove_t gladb_move_pain_air = {
 	FRAME_painup1,
-   	FRAME_painup7,
-   	gladb_frames_pain_air,
-   	gladb_run
+	FRAME_painup7,
+	gladb_frames_pain_air,
+	gladb_run
 };
 
 void
 gladb_pain(edict_t *self, edict_t *other /* unused */,
 		float kick /* unused */, int damage)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -392,7 +392,7 @@ gladb_pain(edict_t *self, edict_t *other /* unused */,
 void
 gladb_dead(edict_t *self)
 {
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}
@@ -432,19 +432,19 @@ mframe_t gladb_frames_death[] = {
 
 mmove_t gladb_move_death = {
 	FRAME_death1,
-   	FRAME_death22,
-   	gladb_frames_death,
-   	gladb_dead
+	FRAME_death22,
+	gladb_frames_death,
+	gladb_dead
 };
 
 void
 gladb_die(edict_t *self, edict_t *inflictor /* unused */,
-	   	edict_t *attacker /* unused */, int damage /*unused */,
+		edict_t *attacker /* unused */, int damage /*unused */,
 		vec3_t point)
 {
 	int n;
 
-  	if (!self)
+	if (!self)
 	{
 		return;
 	}

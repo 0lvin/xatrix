@@ -325,7 +325,7 @@ ED_CallSpawn(edict_t *ent)
 	gitem_t *item;
 	int i;
 
-  	if (!ent)
+	if (!ent)
 	{
 		return;
 	}
@@ -357,7 +357,7 @@ ED_CallSpawn(edict_t *ent)
 	{
 		if (!strcmp(s->name, ent->classname))
 		{
-		   	/* found it */
+			/* found it */
 			s->spawn(ent);
 			return;
 		}
@@ -699,7 +699,7 @@ SpawnEntities(const char *mapname, char *entities, const char *spawnpoint)
 		/* yet another map hack */
 		if (!Q_stricmp(level.mapname, "command") &&
 			!Q_stricmp(ent->classname, "trigger_once") &&
-		   	!Q_stricmp(ent->model, "*27"))
+			!Q_stricmp(ent->model, "*27"))
 		{
 			ent->spawnflags &= ~SPAWNFLAG_NOT_HARD;
 		}
@@ -948,7 +948,7 @@ SP_worldspawn(edict_t *ent)
 	gi.configstring(CS_SKYROTATE, va("%f", st.skyrotate));
 
 	gi.configstring(CS_SKYAXIS, va("%f %f %f", st.skyaxis[0],
-			   	st.skyaxis[1], st.skyaxis[2]));
+				st.skyaxis[1], st.skyaxis[2]));
 
 	gi.configstring(CS_CDTRACK, va("%i", ent->sounds));
 

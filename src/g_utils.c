@@ -221,7 +221,7 @@ G_UseTargets(edict_t *ent, edict_t *activator /* may be NULL */)
 		else
 		{
 			gi.sound(activator, CHAN_AUTO, gi.soundindex("misc/talk1.wav"),
-				   	1, ATTN_NORM, 0);
+					1, ATTN_NORM, 0);
 		}
 	}
 
