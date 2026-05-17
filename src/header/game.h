@@ -204,7 +204,7 @@ typedef struct
 	void (*RunFrame)(void);
 
 	/* ServerCommand will be called when an "sv <command>"
-	   command is issued on the  server console. The game can
+	   command is issued on the server console. The game can
 	   issue gi.argc() / gi.argv() commands to get the rest
 	   of the parameters */
 	void (*ServerCommand)(void);

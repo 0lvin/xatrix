@@ -1000,7 +1000,7 @@ monster_start(edict_t *self)
 	if (self->monsterinfo.currentmove)
 	{
 		self->s.frame = self->monsterinfo.currentmove->firstframe +
-						(rand() %
+						(randk() %
 						 (self->monsterinfo.currentmove->lastframe -
 		 self->monsterinfo.currentmove->firstframe + 1));
 	}

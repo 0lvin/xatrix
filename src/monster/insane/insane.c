@@ -77,7 +77,7 @@ insane_scream(edict_t *self)
 		return;
 	}
 
-	gi.sound(self, CHAN_VOICE, sound_scream[rand() % 8], 1, ATTN_IDLE, 0);
+	gi.sound(self, CHAN_VOICE, sound_scream[randk() % 8], 1, ATTN_IDLE, 0);
 }
 
 mframe_t insane_frames_stand_normal[] = {
@@ -637,7 +637,7 @@ insane_pain(edict_t *self, edict_t *other /* unused */,
 
 	self->pain_debounce_time = level.time + 3;
 
-	r = 1 + (rand() & 1);
+	r = 1 + (randk() & 1);
 
 	if (self->health < 25)
 	{
@@ -831,7 +831,7 @@ insane_die(edict_t *self, edict_t *inflictor /* unused */,
 	}
 
 	gi.sound(self, CHAN_VOICE, gi.soundindex(va("player/male/death%i.wav",
-							(rand() % 4) + 1)), 1, ATTN_IDLE, 0);
+							(randk() % 4) + 1)), 1, ATTN_IDLE, 0);
 
 	self->deadflag = DEAD_DEAD;
 	self->takedamage = DAMAGE_YES;
@@ -929,6 +929,6 @@ SP_misc_insane(edict_t *self)
 	else
 	{
 		walkmonster_start(self);
-		self->s.skinnum = rand() % 3;
+		self->s.skinnum = randk() % 3;
 	}
 }

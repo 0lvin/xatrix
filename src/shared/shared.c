@@ -57,7 +57,7 @@ RotatePointAroundVector(vec3_t dst, const vec3_t dir,
 	im[2][1] = m[1][2];
 
 	memset(zrot, 0, sizeof(zrot));
-	zrot[1][1] = zrot[2][2] = 1.0F;
+	zrot[2][2] = 1.0F;
 
 	zrot[0][0] = (float)cos(DEG2RAD(degrees));
 	zrot[0][1] = (float)sin(DEG2RAD(degrees));

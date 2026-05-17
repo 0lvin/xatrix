@@ -47,10 +47,10 @@
 #include "../header/local.h"
 
 /*
-* When ever the savegame version is changed, q2 will refuse to
-* load older savegames. This should be bumped if the files
-* in tables/ are changed, otherwise strange things may happen.
-*/
+ * When ever the savegame version is changed, q2 will refuse to
+ * load older savegames. This should be bumped if the files
+ * in tables/ are changed, otherwise strange things may happen.
+ */
 #define SAVEGAMEVER "YQ2-4"
 
 
@@ -142,12 +142,12 @@ typedef struct
  * to each of the functions
  * prototyped above.
  */
-functionList_t functionList[] = {
+static const functionList_t functionList[] = {
 	#include "tables/gamefunc_list.h"
 };
 
 /*
- * Prtotypes for forward
+ * Prototypes for forward
  * declaration for all game
  * mmove_t functions.
  */
@@ -159,30 +159,28 @@ functionList_t functionList[] = {
  * functions prototyped
  * above.
  */
-mmoveList_t mmoveList[] = {
+static const mmoveList_t mmoveList[] = {
 	#include "tables/gamemmove_list.h"
 };
 
 /*
- * Fields to be saved
+ * Entity fields to be saved
  */
-field_t fields[] = {
+static const field_t fields[] = {
 	#include "tables/fields.h"
 };
 
 /*
- * Level fields to
- * be saved
+ * Level fields to be saved
  */
-field_t levelfields[] = {
+static const field_t levelfields[] = {
 	#include "tables/levelfields.h"
 };
 
 /*
- * Client fields to
- * be saved
+ * Client fields to be saved
  */
-field_t clientfields[] = {
+static const field_t clientfields[] = {
 	#include "tables/clientfields.h"
 };
 

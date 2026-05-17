@@ -9,7 +9,6 @@
 #include "boss31.h"
 
 extern void SP_monster_makron(edict_t *self);
-qboolean visible(edict_t *self, edict_t *other);
 
 static int sound_pain1;
 static int sound_pain2;
